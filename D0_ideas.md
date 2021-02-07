@@ -17,3 +17,8 @@ send me reminders to do my work, and offer me different methods to complete my w
 in this virtual learning setting (which hopefully does not last forever.) My problem with motivation to do my work is that I will write everything down in my notes during 
 class that I need to complete. However, I don't write that in my planner, or I forget to look at my planner. Nowadays, everyone has their phone on them at all times, so if 
 an app sends you a notifcation that you need to do an assignment, I'm hoping you are more likely to get that done and not forget about it until the last possible moment.
+
+Concerns: 
+I have a lot of ideas mashed up into one and I don't know if they will go together as well as I hope. I am having a hard time explaining exactly what I want into words
+rather than the image I have in my mind of what I want. So, hopefully after some more discussion I am able to better explain my idea in words that other people will 
+be able to understand.
