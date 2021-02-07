@@ -1,23 +1,19 @@
 # Deliverable 0 - Project ideas
 
-**Name:**  
+**Name:**  Tayttum Horine
 
-## Instructions
+**List of Ideas**
+I only have one idea for my project. However I want to implement a lot of different ideas into this app.
 
-1. Write the list of ideas you've generated (at least 3)
+My project idea is to have this app that replaces your paper planner, but better than that. You set due dates for your assigments, when you want to complete them, what you
+need to complete, and once you complete x amount of those tasks you receive a nofication saying "Congratulations you completed x amount of tasks, or x amount of minutes
+studying" now reward yourself with *whatever they set as a reward*" Or if you are not getting anything done it will send you a notifcation "This assignment is due tonight]
+don't forget." Essentailly this is a very personalized version of Outlook Calender, with a notification/reward system that you can set up. It is not only for unmotivated 
+students, but forgetful people as well. This app does not have to be used only for assingments, you can use it for anything you would put in your regular planner as well:
+appointments, date nights, or any other plans you have. 
 
-2. For each idea:
-
-- Describe the idea or the problem you want to solve (.e.g. I want to know how much money and polar bears I would save with a vegan diet; It's hard for me to find sheet music for my favorite video game soundtracks;  I want to make a robotic selfie stick that always gets the best angle )
-
-- Describe an envisioned scenario of use or target user(s)
-
-- Describe possible modalities a solution to your idea could take (web, mobile app, wearable, physical). There can be more than one.
-
-- Give the idea a personal enthusiasm score (5: I love it! -- 1: meh)
-
-3. Briefly summarize what your preferred idea is, and why you want to use this as your project. Describe any goals, concerns or challenges you have. We will use this as a starting point for our individual meetings with you next week.
-
-## Submission
-
-Save the document as _"D0 - Ideas.md"_ and submit to your Deliverables folder in (Github)[www.github.com].
+My personal enthusiasm score for this project right now is at a 3. I am super unmotivated to do my work and often wait until the last minute. So if I have an app that will
+send me reminders to do my work, and offer me different methods to complete my work, I would be much more motivated. I am hoping that this app will help others, especially 
+in this virtual learning setting (which hopefully does not last forever.) My problem with motivation to do my work is that I will write everything down in my notes during 
+class that I need to complete. However, I don't write that in my planner, or I forget to look at my planner. Nowadays, everyone has their phone on them at all times, so if 
+an app sends you a notifcation that you need to do an assignment, I'm hoping you are more likely to get that done and not forget about it until the last possible moment.
