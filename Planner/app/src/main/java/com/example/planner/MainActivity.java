@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+// Seeing if this change is reflected in Capstone project (check)
 public class MainActivity extends AppCompatActivity {
 
     @Override
