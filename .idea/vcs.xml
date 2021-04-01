@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/List" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TodoApp_Android_Architecture_Components" vcs="" />
+    <mapping directory="$PROJECT_DIR$/android-todo-list" vcs="Git" />
   </component>
 </project>
