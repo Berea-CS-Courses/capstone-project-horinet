@@ -2,63 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todolistproject/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/capstone-project-horinet.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/capstone-project-horinet.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/proguard-rules.pro" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/proguard-rules.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/androidTest/java/com/example/planner_app_2/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/androidTest/java/com/example/todolist/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/java/com/example/planner_app_2/DateConverter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/java/com/example/planner_app_2/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/java/com/example/planner_app_2/RoomDB.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/java/com/example/planner_app_2/Task.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/java/com/example/planner_app_2/ToDoListAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/drawable-v24/priority_circle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/layout/activity_addtask.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/layout/layout_rowitem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/app/src/test/java/com/example/planner_app_2/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/test/java/com/example/todolist/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Planner_App_2/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deliverables/D4.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliverables/D4.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
