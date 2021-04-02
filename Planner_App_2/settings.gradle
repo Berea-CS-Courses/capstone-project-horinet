@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Planner_App_2"
