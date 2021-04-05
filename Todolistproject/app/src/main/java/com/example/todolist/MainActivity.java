@@ -1,12 +1,8 @@
 package com.example.todolist;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -25,15 +21,15 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.todo_screen);
         readItems(); // <---- Add this line
         lvItems = (ListView) findViewById(R.id.lvItems);
         items = new ArrayList<String>();
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
-        items.add("First Item");
-        items.add("Second Item");
-        items.add("Third Item Item");
+        //items.add("First Item");
+        //items.add("Second Item");
+        //items.add("Third Item Item");
         // Setup remove listener method call
         setupListViewListener();
     }
