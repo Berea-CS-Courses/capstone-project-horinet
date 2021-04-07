@@ -6,6 +6,8 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Checkable;
+
 
 import org.apache.commons.io.FileUtils;
 
@@ -19,8 +21,13 @@ public class MainActivity extends Activity {
     private ListView lvItems;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.homescreen);
+
+    }
+
+    public void onTodoScreen(View todo_screen){
         setContentView(R.layout.todo_screen);
         readItems(); // <---- Add this line
         lvItems = (ListView) findViewById(R.id.lvItems);
@@ -31,8 +38,7 @@ public class MainActivity extends Activity {
         //items.add("Second Item");
         //items.add("Third Item Item");
         // Setup remove listener method call
-        setupListViewListener();
-    }
+        setupListViewListener();}
 
     private void setupListViewListener() {
         lvItems.setOnItemLongClickListener(
