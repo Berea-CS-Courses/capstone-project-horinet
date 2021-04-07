@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/homescreen.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deliverables/D4.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliverables/D4.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/todo_screen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reflections/Week of April 5 reflection.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/Week of April 5 reflection.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,25 +51,33 @@
       <option name="presentableId" value="Default" />
       <updated>1617642689136</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="just figuring out if this branch works correctly.">
+      <created>1617645368649</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617645368649</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated the reflection" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the reflection" />
+    <MESSAGE value="just figuring out if this branch works correctly." />
+    <option name="LAST_COMMIT_MESSAGE" value="just figuring out if this branch works correctly." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1617335486575">
+    <state x="271" y="0" key="CommitChangelistDialog2" timestamp="1617645367476">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617335486575" />
+    <state x="271" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1617645367476" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1617644069518">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1617644069518" />
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1617335489511">
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1617645396343">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1617335489511" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1617645396343" />
   </component>
 </project>
