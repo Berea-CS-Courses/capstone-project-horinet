@@ -4,9 +4,11 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Checkable;
+import android.view.View.OnClickListener;
+
 
 
 import org.apache.commons.io.FileUtils;
@@ -19,15 +21,18 @@ public class MainActivity extends Activity {
     private ArrayList<String> items;
     private ArrayAdapter<String> itemsAdapter;
     private ListView lvItems;
+    private Button todo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
+        todo = findViewById(R.id.todobutton);
+        todo.setOnClickListener(this::onTodoScreen);
 
     }
 
-    public void onTodoScreen(View todo_screen){
+    public void onTodoScreen(View v){
         setContentView(R.layout.todo_screen);
         readItems(); // <---- Add this line
         lvItems = (ListView) findViewById(R.id.lvItems);
@@ -38,7 +43,8 @@ public class MainActivity extends Activity {
         //items.add("Second Item");
         //items.add("Third Item Item");
         // Setup remove listener method call
-        setupListViewListener();}
+        setupListViewListener();
+    }
 
     private void setupListViewListener() {
         lvItems.setOnItemLongClickListener(
