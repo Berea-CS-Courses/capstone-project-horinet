@@ -29,6 +29,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.homescreen);
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
+        
 
     }
 
