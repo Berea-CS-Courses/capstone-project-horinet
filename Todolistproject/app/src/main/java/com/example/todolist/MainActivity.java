@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.view.View.OnClickListener;
 
@@ -22,6 +23,8 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> itemsAdapter;
     private ListView lvItems;
     private Button todo;
+    private Button additem;
+    //private ImageButton calendar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -29,21 +32,25 @@ public class MainActivity extends Activity {
         setContentView(R.layout.homescreen);
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
-        
+        //calendar = findViewById(R.id.calendarview);
+        //calendar.setOnClickListener(this::);
+
 
     }
 
     public void onTodoScreen(View v){
         setContentView(R.layout.todo_screen);
         readItems(); // <---- Add this line
-        lvItems = (ListView) findViewById(R.id.lvItems);
+        lvItems = findViewById(R.id.lvItems);
         items = new ArrayList<String>();
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
-        //items.add("First Item");
+        items.add("First Item");
         //items.add("Second Item");
         //items.add("Third Item Item");
         // Setup remove listener method call
+        additem = findViewById(R.id.btnAddItem);
+        additem.setOnClickListener(this::onAddItem);
         setupListViewListener();
     }
 
@@ -61,7 +68,7 @@ public class MainActivity extends Activity {
     }
 
     public void onAddItem(View v) {
-        EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
+        EditText etNewItem = findViewById(R.id.etNewItem);
         String itemText = etNewItem.getText().toString();
         itemsAdapter.add(itemText);
         etNewItem.setText("");
@@ -83,4 +90,5 @@ public class MainActivity extends Activity {
         try { FileUtils.writeLines(todoFile, items); }
         catch (IOException e) { e.printStackTrace();}
     }
+    
 }
