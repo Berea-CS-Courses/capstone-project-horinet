@@ -1,5 +1,5 @@
 ## What have you accomplished this week? (Please list each accomplishment, and explain)
-This week I have created the layout for the calendar popup, the mainscreen/homescreen, and added a click listener go from the todo button on the main screen to the todo layout. And as a result of that, I managed to break the Android studio Emulator after one run. However, 
+This week I have created the layout for the calendar popup, the mainscreen/homescreen, and added a click listener go from the todo button on the main screen to the todo layout. And as a result of that, I managed to break the Android studio Emulator after one run. However, I will be getting an android device soon to run my app on!
 
 ## What challenges or difficulties did you face? If you solved them, how? If not, what have you learned so far? Have you sought help or other resources?
 So many challenges with Android studio. Originally, I fixed it by using a different device on the emulator, however that still crashed. So, my solution is going to be using an actual Android device instead of attempting to run this on the emulator. Jess is so kind and we are going to work something out so that I can use one of his old Android phones to run my code on. Hopefully that makes continuing with this process much easier. 
