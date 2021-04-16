@@ -12,8 +12,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
         android:clickable="false"
         android:text="Task name"
+        app:layout_constraintEnd_toStartOf="@+id/tasknametext"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,13 +26,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="Task description"
         app:layout_constraintEnd_toStartOf="@+id/taskdesctext"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tasknametext" />
+        app:layout_constraintTop_toTopOf="@+id/taskdesctext" />
 
     <EditText
         android:id="@+id/tasknametext"
@@ -46,8 +49,8 @@
 
     <EditText
         android:id="@+id/taskdesctext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="196dp"
+        android:layout_height="108dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
@@ -62,11 +65,11 @@
 
     <EditText
         android:id="@+id/duedatetaxt"
-        android:layout_width="129dp"
-        android:layout_height="39dp"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="56dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:ems="10"
@@ -82,9 +85,9 @@
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:ems="10"
         android:hint="hh:mm"
         android:inputType="time"
@@ -98,11 +101,57 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
         android:text="Due date and time"
         app:layout_constraintEnd_toStartOf="@+id/duedatetaxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/taskdesc" />
+
+    <EditText
+        android:id="@+id/duetimetext2"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintEnd_toStartOf="@+id/duedatentime3"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <EditText
+        android:id="@+id/duetimetext3"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <TextView
+        android:id="@+id/duedatentime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="End time "
+        app:layout_constraintEnd_toStartOf="@+id/duetimetext3"
+        app:layout_constraintTop_toTopOf="@+id/duetimetext3" />
+
+    <TextView
+        android:id="@+id/duedatentime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Start time "
+        app:layout_constraintEnd_toStartOf="@+id/duetimetext2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/duetimetext2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
