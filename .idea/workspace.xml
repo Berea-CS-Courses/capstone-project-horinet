@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflections/Week 2 (April 19) reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/Week 3 (April 19) reflection.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/addtaskscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/addtaskscreen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
