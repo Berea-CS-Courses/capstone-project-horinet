@@ -1,7 +1,5 @@
 plugins {
     id 'com.android.application'
-    apply plugin: 'com.google.gms.google-services'
-
 }
 
 android {
@@ -13,7 +11,6 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -42,5 +39,5 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:27.0.0') //got this and the 2 lines after it from the firebase tutorial on how to set it up
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.google.firebase:firebase-auth'
-
 }
+apply plugin: 'com.google.gms.google-services' //This line of code goes here, not in the plugins section.
