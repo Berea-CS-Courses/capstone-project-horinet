@@ -1,5 +1,7 @@
 ## What have you accomplished this week? (Please list each accomplishment, and explain)
-
+Adding Firebase to my app 
+Finished up the newaddtaskscreen.xml
+Cleaned up my code: Separated the functions in the main activity to different classes so that is ot easier to navigate 
 
 ## What challenges or difficulties did you face? If you solved them, how? If not, what have you learned so far? Have you sought help or other resources?
 

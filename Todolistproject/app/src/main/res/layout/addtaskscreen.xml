@@ -113,26 +113,29 @@
         android:id="@+id/duetimetext2"
         android:layout_width="71dp"
         android:layout_height="40dp"
+        android:layout_marginTop="69dp"
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
         android:ems="10"
         android:hint="hh:mm"
         android:inputType="time"
-        app:layout_constraintEnd_toStartOf="@+id/duedatentime3"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintEnd_toStartOf="@+id/endtime"
+        app:layout_constraintTop_toBottomOf="@+id/duedatentime" />
 
     <EditText
         android:id="@+id/duetimetext3"
         android:layout_width="71dp"
         android:layout_height="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
         android:ems="10"
         android:hint="hh:mm"
         android:inputType="time"
-        tools:layout_editor_absoluteX="278dp"
-        tools:layout_editor_absoluteY="329dp" />
+        app:layout_constraintStart_toEndOf="@+id/endtime"
+        app:layout_constraintTop_toTopOf="@+id/duetimetext2" />
 
     <TextView
-        android:id="@+id/duedatentime3"
+        android:id="@+id/endtime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -142,7 +145,7 @@
         app:layout_constraintTop_toTopOf="@+id/duetimetext3" />
 
     <TextView
-        android:id="@+id/duedatentime2"
+        android:id="@+id/starttime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -153,5 +156,33 @@
         app:layout_constraintEnd_toStartOf="@+id/duetimetext2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/duetimetext2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="72dp"
+        android:text="Send me reminders for this task"
+        app:layout_constraintTop_toBottomOf="@+id/duetimetext2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        tools:layout_editor_absoluteY="397dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
