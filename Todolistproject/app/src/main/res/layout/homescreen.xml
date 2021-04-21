@@ -29,10 +29,12 @@
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
         android:text="Finished"
+        android:textColorLink="#909F4B"
         app:backgroundTint="#909F4B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/todobutton" />
+        app:layout_constraintTop_toBottomOf="@+id/todobutton"
+        app:rippleColor="#909F4B" />
 
     <Button
         android:id="@+id/upcomingbtn"
@@ -45,10 +47,12 @@
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
         android:text="upcoming"
+        android:textColorLink="#D88B3A"
         app:backgroundTint="#D88B3A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/finishedbutton" />
+        app:layout_constraintTop_toBottomOf="@+id/finishedbutton"
+        app:rippleColor="#D88B3A" />
 
     <Button
         android:id="@+id/todobutton"

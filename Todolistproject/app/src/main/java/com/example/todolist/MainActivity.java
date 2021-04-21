@@ -33,14 +33,11 @@ public class MainActivity extends Activity {
         calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
         addtaskhs.setOnClickListener(this::newaddtaskscreen);
-
-
     }
 
     public void newaddtaskscreen(View v) {
         setContentView(R.layout.addtaskscreen);
         // need to figure out how to store this data
-
     }
 
     public void onTodoScreen(View v){
