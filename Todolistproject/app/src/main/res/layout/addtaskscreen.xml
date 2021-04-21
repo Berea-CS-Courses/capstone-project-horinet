@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/taskname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:clickable="false"
+        android:text="Task name"
+        app:layout_constraintEnd_toStartOf="@+id/tasknametext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Task description"
+        app:layout_constraintEnd_toStartOf="@+id/taskdesctext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/taskdesctext" />
+
+    <EditText
+        android:id="@+id/tasknametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/taskname"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:hint="enter task name" />
+
+    <EditText
+        android:id="@+id/taskdesctext"
+        android:layout_width="196dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:ems="10"
+        android:hint="enter task description"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/taskdesc"
+        app:layout_constraintTop_toBottomOf="@+id/tasknametext" />
+
+    <EditText
+        android:id="@+id/duedatetaxt"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="mm/dd/yyy"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/duetimetext"
+        app:layout_constraintStart_toEndOf="@+id/duedatentime"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesctext" />
+
+    <EditText
+        android:id="@+id/duetimetext"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/duedatetaxt"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesctext" />
+
+    <TextView
+        android:id="@+id/duedatentime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Due date and time"
+        app:layout_constraintEnd_toStartOf="@+id/duedatetaxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesc" />
+
+    <EditText
+        android:id="@+id/duetimetext2"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintEnd_toStartOf="@+id/duedatentime3"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <EditText
+        android:id="@+id/duetimetext3"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="329dp" />
+
+    <TextView
+        android:id="@+id/duedatentime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="End time "
+        app:layout_constraintEnd_toStartOf="@+id/duetimetext3"
+        app:layout_constraintTop_toTopOf="@+id/duetimetext3" />
+
+    <TextView
+        android:id="@+id/duedatentime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Start time "
+        app:layout_constraintEnd_toStartOf="@+id/duetimetext2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/duetimetext2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

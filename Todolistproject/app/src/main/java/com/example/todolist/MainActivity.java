@@ -8,12 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import android.view.View.OnClickListener;
-
-
 
 import org.apache.commons.io.FileUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -24,7 +20,8 @@ public class MainActivity extends Activity {
     private ListView lvItems;
     private Button todo;
     private Button additem;
-    //private ImageButton calendar;
+    private ImageButton calendar;
+    private Button addtaskhs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -32,9 +29,17 @@ public class MainActivity extends Activity {
         setContentView(R.layout.homescreen);
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
-        //calendar = findViewById(R.id.calendarview);
-        //calendar.setOnClickListener(this::);
+        calendar = findViewById(R.id.calendarb);
+        calendar.setOnClickListener(this::calendarView);
+        addtaskhs = findViewById(R.id.addtaskbtn);
+        addtaskhs.setOnClickListener(this::newaddtaskscreen);
 
+
+    }
+
+    public void newaddtaskscreen(View v) {
+        setContentView(R.layout.addtaskscreen);
+        // need to figure out how to store this data
 
     }
 
@@ -65,6 +70,9 @@ public class MainActivity extends Activity {
                     writeItems();
                     return true;
                 });
+    }
+    public void calendarView(View v){
+        setContentView(R.layout.calendarview);
     }
 
     public void onAddItem(View v) {
