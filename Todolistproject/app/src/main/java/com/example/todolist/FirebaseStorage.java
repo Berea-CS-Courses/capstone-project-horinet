@@ -17,10 +17,11 @@ public class FirebaseStorage {
     // [START declare_auth]
     private FirebaseAuth uAuth;
     @Override
-    public void onCreate(Bundle SavedInstanceState){
-        super.onCreate(SavedInstanceState);
+    protected void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
         uAuth = FirebaseAuth.getInstance();
         //initializes the firebase auth
+        
     }
 
 }

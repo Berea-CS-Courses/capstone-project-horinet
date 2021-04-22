@@ -5,6 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:id="@+id/remdatetext"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:hint="mm/dd/yyy"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/remdatentime"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/remdatentime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Due date and time"
+        app:layout_constraintEnd_toStartOf="@+id/remdatetext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/remtimetext2"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/remdatetext"
+        app:layout_constraintTop_toTopOf="@+id/remdatetext" />
+
     <TextView
         android:id="@+id/taskname"
         android:layout_width="wrap_content"
@@ -148,7 +187,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="72dp"
-        android:text="Send me reminders for this task"
+        android:text="Set reminders"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/starttimetext" />
 
