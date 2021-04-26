@@ -23,7 +23,8 @@ public class MainActivity extends Activity {
     private ImageButton calendar;
     private Button addtaskhs;
     private Button login;
-    private Button  create;
+    private Button lcreate; //create account button on login page
+    private Button create; //create account on create page
     //private static final String TAG = "EmailPassword";
 
 
@@ -32,8 +33,13 @@ public class MainActivity extends Activity {
         //This is the function that controls what happens on create. The buttons have onclick listeners that take the user to the corresponding page.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginscreen); //had to debug this because it was not working, however it shows now.
-        
-        
+        lcreate = findViewById(R.id.cracc1);
+        lcreate.setOnClickListener(this::createaccount); //just takes user to the create account screen if they don't have an account already
+    
+    }
+
+    private void createaccount(View view) {
+        setContentView(R.layout.createscreen);
     }
 
     public void homescreen(View v){
