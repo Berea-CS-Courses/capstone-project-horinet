@@ -22,13 +22,21 @@ public class MainActivity extends Activity {
     private Button additem;
     private ImageButton calendar;
     private Button addtaskhs;
-    private Button logscreen;
+    private Button login;
+    private Button  create;
+    //private static final String TAG = "EmailPassword";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         //This is the function that controls what happens on create. The buttons have onclick listeners that take the user to the corresponding page.
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.loginscreen); //had to debug this because it was not working, however it shows now.
+        
+        
+    }
+
+    public void homescreen(View v){
         setContentView(R.layout.homescreen);
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
@@ -36,8 +44,9 @@ public class MainActivity extends Activity {
         calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
         addtaskhs.setOnClickListener(this::newaddtaskscreen);
+        
     }
-
+    
     public void newaddtaskscreen(View v) {
         setContentView(R.layout.addtaskscreen);
         // need to figure out how to store this data

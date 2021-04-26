@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Reflections/Week 3 (April 19) reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/Week 3 (April 19) reflection.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Reflections/Week 4 (April26) reflection.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/FirebaseEmailandPass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/loginscreen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/FirebaseStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/addtaskscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/addtaskscreen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/loginorcreatescreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/createscreen.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/testscreenwithui.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="database" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Todolistproject" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="SvnConfiguration">
@@ -64,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618597009098</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="I have added my reflection!!">
+      <created>1619198087246</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1619198087247</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -73,18 +88,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="I have added my reflection!!" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1618597007922">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1619198086020">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1618597007922" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1618764227645">
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1619198086020" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1619450202010">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1618764227645" />
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1618597011657">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619450202010" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1619198089193">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1618597011657" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619198089193" />
     <state x="492" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617836541010">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
