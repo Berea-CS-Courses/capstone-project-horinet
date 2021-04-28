@@ -10,7 +10,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 via: https://firebase.google.com/docs/auth/android/password-auth
 */
-/*package com.example.todolist;
+package com.example.todolist;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -22,15 +22,12 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import android.app.Activity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import com.google.firebase.auth.FirebaseAuth;
 import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
@@ -38,9 +35,11 @@ import java.util.ArrayList;
 import java.util.concurrent.Executor;
 
 // I am not even close to done with this. I've done a lot of reading and I'm going to attempt to try this out and see if I can get it to work with firebase storing data and also user authentication
-public class FirebaseEmailandPass {
+
+public class FirebaseEmailandPass extends Activity{
     private static final String TAG = "EmailPassword";
     private FirebaseAuth uAuth;
+    private Button createacc;
 
     @Override
     public void onCreate(Bundle savedInstanceState){
@@ -57,14 +56,14 @@ public class FirebaseEmailandPass {
     }
     private void createAccount(String email, String password) {
         // [START create_user_with_email]
-        mAuth.createUserWithEmailAndPassword(email, password)
+        uAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "createUserWithEmail:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
+                            FirebaseUser user = uAuth.getCurrentUser();
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -80,14 +79,14 @@ public class FirebaseEmailandPass {
 
     private void signIn(String email, String password) {
         // [START sign_in_with_email]
-        mAuth.signInWithEmailAndPassword(email, password)
+        uAuth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
+                            FirebaseUser user = uAuth.getCurrentUser();
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -104,7 +103,7 @@ public class FirebaseEmailandPass {
     private void sendEmailVerification() {
         // Send verification email
         // [START send_email_verification]
-        final FirebaseUser user = mAuth.getCurrentUser();
+        final FirebaseUser user = uAuth.getCurrentUser();
         user.sendEmailVerification()
                 .addOnCompleteListener(this, new OnCompleteListener<Void>() {
                     @Override
@@ -121,4 +120,3 @@ public class FirebaseEmailandPass {
 
     }
 }
-*/
