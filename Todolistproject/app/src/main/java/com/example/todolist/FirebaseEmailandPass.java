@@ -113,7 +113,7 @@ public class FirebaseEmailandPass extends Activity{
                         // Email sent
                     }
                 });
-        // [END send_email_verification]
+        // end send_email_verification
     }
 
     private void reload() { }
