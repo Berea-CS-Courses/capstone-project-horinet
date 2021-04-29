@@ -46,6 +46,8 @@ public class FirebaseEmailandPass extends Activity{
         super.onCreate(savedInstanceState);
         uAuth = FirebaseAuth.getInstance();
         //initializes the firebase auth
+        setContentView(R.layout.loginscreen);
+
     }
     @Override
     public void onStart() {
