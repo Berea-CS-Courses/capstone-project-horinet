@@ -35,7 +35,11 @@ import java.util.ArrayList;
 import java.util.concurrent.Executor;
 
 // I am not even close to done with this. I've done a lot of reading and I'm going to attempt to try this out and see if I can get it to work with firebase storing data and also user authentication
-
+/* What I want to happen in this: The user either logins in or creates the account. It checks first to see if the user is logged in already, if they are, it updates the UI for their account.
+If the user is not logged in, they either need to login or create an account. When they login it checks to see if email/pass works, then logs them in based on that.
+If user creates an account, it needs to check that passwords match, check if email already exists, if that checks out, the user can create their account.
+This is a template with a few minor changes from the website listen above along with the license copy.
+ */
 public class FirebaseEmailandPass extends Activity{
     private static final String TAG = "EmailPassword";
     private FirebaseAuth uAuth;

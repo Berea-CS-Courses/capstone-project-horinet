@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reflections/Week 4 (April26) reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/Week 4 (April26) reflection.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/FirebaseEmailandPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/FirebaseEmailandPass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/createscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/createscreen.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Todolistproject" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="SvnConfiguration">
@@ -95,6 +96,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619198089193" />
+    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1619799357239">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.738@0.0.1366.738" timestamp="1619799357239" />
     <state x="492" y="283" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617836541010">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

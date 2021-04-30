@@ -24,7 +24,8 @@ public class MainActivity extends Activity {
     private Button addtaskhs;
     private Button login;
     private Button lcreate; //create account button on login page
-    private Button create; //create account on create page
+    private Button createacc; //create account on create page
+    private ImageButton xbtnca; //the back button on the create account screen that will take you back to login
     //private static final String TAG = "EmailPassword";
 
 
@@ -35,11 +36,19 @@ public class MainActivity extends Activity {
         setContentView(R.layout.loginscreen); //had to debug this because it was not working, however it shows now.
         lcreate = findViewById(R.id.cracc1);
         lcreate.setOnClickListener(this::createaccount); //just takes user to the create account screen if they don't have an account already
-    
+
     }
+
+    /*private void loginscreen(View v) {
+        setContentView(R.layout.loginscreen); //had to debug this because it was not working, however it shows now.
+        lcreate = findViewById(R.id.cracc1);
+        lcreate.setOnClickListener(this::createaccount);
+    }*/
 
     private void createaccount(View view) {
         setContentView(R.layout.createscreen);
+        //xbtnca = findViewById(R.id.xbttnca); // I want to set an onClickListener that goes back to the login screen when the x is clicked
+        //xbtnca.setOnClickListener(this::loginscreen);
     }
 
     public void homescreen(View v){
