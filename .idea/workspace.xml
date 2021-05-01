@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_login.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/FirebaseEmailandPass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/createscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/createscreen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/homescreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/homescreen.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/values/themes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +36,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Todolistproject" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="SvnConfiguration">
@@ -95,10 +91,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1619801462748" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1619450202010">
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1619897927442">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619450202010" />
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619897927442" />
     <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1619198089193">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

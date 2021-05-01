@@ -33,28 +33,6 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState)  {
         //This is the function that controls what happens on create. The buttons have onclick listeners that take the user to the corresponding page.
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loginscreen); //had to debug this because it was not working, however it shows now.
-        lcreate = findViewById(R.id.cracc1);
-        lcreate.setOnClickListener(this::createaccount); //just takes user to the create account screen if they don't have an account already
-        login = findViewById(R.id.loginb);
-        login.setOnClickListener(this::homescreen);
-    }
-
-    /*private void loginscreen(View v) {
-        setContentView(R.layout.loginscreen); //had to debug this because it was not working, however it shows now.
-        lcreate = findViewById(R.id.cracc1);
-        lcreate.setOnClickListener(this::createaccount);
-    }*/
-
-    public void createaccount(View v) {
-        setContentView(R.layout.createscreen);
-        //xbtnca = findViewById(R.id.xbttnca); // I want to set an onClickListener that goes back to the login screen when the x is clicked
-        //xbtnca.setOnClickListener(this::loginscreen);
-        createacc = findViewById(R.id.realcreateaccount);
-        createacc.setOnClickListener(this::homescreen);
-    }
-
-    public void homescreen(View v){
         setContentView(R.layout.homescreen);
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
@@ -62,7 +40,6 @@ public class MainActivity extends Activity {
         calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
         addtaskhs.setOnClickListener(this::newaddtaskscreen);
-        
     }
     
     public void newaddtaskscreen(View v) {
