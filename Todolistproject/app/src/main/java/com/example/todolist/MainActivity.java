@@ -36,7 +36,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.loginscreen); //had to debug this because it was not working, however it shows now.
         lcreate = findViewById(R.id.cracc1);
         lcreate.setOnClickListener(this::createaccount); //just takes user to the create account screen if they don't have an account already
-
+        login = findViewById(R.id.loginb);
+        login.setOnClickListener(this::homescreen);
     }
 
     /*private void loginscreen(View v) {
@@ -45,10 +46,12 @@ public class MainActivity extends Activity {
         lcreate.setOnClickListener(this::createaccount);
     }*/
 
-    private void createaccount(View view) {
+    public void createaccount(View v) {
         setContentView(R.layout.createscreen);
         //xbtnca = findViewById(R.id.xbttnca); // I want to set an onClickListener that goes back to the login screen when the x is clicked
         //xbtnca.setOnClickListener(this::loginscreen);
+        createacc = findViewById(R.id.realcreateaccount);
+        createacc.setOnClickListener(this::homescreen);
     }
 
     public void homescreen(View v){
