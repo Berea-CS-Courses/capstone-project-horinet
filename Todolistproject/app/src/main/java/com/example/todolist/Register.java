@@ -10,7 +10,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -19,12 +18,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import org.w3c.dom.Text;
-
 public class Register extends AppCompatActivity {
     EditText rName, rEmail, rPass;
-    Button Registerbtn;
-    TextView loginbtn;
+    Button Registerbtn, loginpg;
     FirebaseAuth rauth;
 
     @Override
@@ -35,7 +31,8 @@ public class Register extends AppCompatActivity {
         rEmail = findViewById(R.id.remail);
         rPass = findViewById(R.id.rpass);
         Registerbtn = findViewById(R.id.racc);
-        loginbtn = findViewById(R.id.tologinpg);
+        loginpg = findViewById(R.id.tologinpg);
+        
 
         rauth = FirebaseAuth.getInstance();
         
@@ -80,8 +77,13 @@ public class Register extends AppCompatActivity {
                         }
                     }
                 });
-
-
+            }
+        });
+        loginpg.setOnClickListener(new View.OnClickListener() {
+            //If login button is clicked, it will go to the login page and run the activity.
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplication(),Login.class));
             }
         });
     }

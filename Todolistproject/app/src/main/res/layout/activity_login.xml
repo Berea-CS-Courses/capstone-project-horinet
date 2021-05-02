@@ -8,7 +8,7 @@
     tools:context= ".Login">
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/lemail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/lpass" />
 
     <TextView
         android:id="@+id/textView3"
@@ -47,7 +47,7 @@
         android:layout_marginTop="16dp"
         android:text="password"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toTopOf="@+id/lpass" />
 
     <TextView
         android:id="@+id/textView2"
@@ -58,7 +58,7 @@
         android:layout_marginTop="4dp"
         android:text="Email"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toTopOf="@+id/lemail" />
 
     <TextView
         android:id="@+id/textView5"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/lpass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress2" />
+        app:layout_constraintTop_toBottomOf="@+id/lemail" />
 
     <TextView
         android:id="@+id/textView10"
@@ -107,7 +107,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loginb" />
 
     <Button
-        android:id="@+id/cracc1"
+        android:id="@+id/toregpg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"

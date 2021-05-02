@@ -1,6 +1,7 @@
 package com.example.todolist;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -8,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.apache.commons.io.FileUtils;
 import java.io.File;
@@ -22,24 +25,27 @@ public class MainActivity extends Activity {
     private Button additem;
     private ImageButton calendar;
     private Button addtaskhs;
-    private Button login;
-    private Button lcreate; //create account button on login page
-    private Button createacc; //create account on create page
-    private ImageButton xbtnca; //the back button on the create account screen that will take you back to login
-    //private static final String TAG = "EmailPassword";
-
+    private Button logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
-        //This is the function that controls what happens on create. The buttons have onclick listeners that take the user to the corresponding page.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
+        logout = findViewById(R.id.logout);
+        logout.setOnClickListener(this::logout);
+        //Configuring all of my buttons with onclick listeners to go to the corresponding page :)
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
         calendar = findViewById(R.id.calendarb);
         calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
         addtaskhs.setOnClickListener(this::newaddtaskscreen);
+    }
+
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplication(),Login.class));
+        finish();
     }
     
     public void newaddtaskscreen(View v) {
