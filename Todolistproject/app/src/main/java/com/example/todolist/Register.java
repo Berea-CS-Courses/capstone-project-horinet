@@ -3,7 +3,6 @@ package com.example.todolist;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -11,7 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -33,7 +31,6 @@ public class Register extends AppCompatActivity {
         Registerbtn = findViewById(R.id.racc);
         loginpg = findViewById(R.id.tologinpg);
         
-
         rauth = FirebaseAuth.getInstance();
         
         if(rauth.getCurrentUser() != null){
@@ -79,6 +76,7 @@ public class Register extends AppCompatActivity {
                 });
             }
         });
+        
         loginpg.setOnClickListener(new View.OnClickListener() {
             //If login button is clicked, it will go to the login page and run the activity.
             @Override
