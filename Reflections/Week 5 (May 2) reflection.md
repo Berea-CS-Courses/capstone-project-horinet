@@ -8,6 +8,7 @@ Sources I've used so far this week:
 https://youtu.be/tbh9YaWPKKs
 https://youtu.be/TwHmrZxiPA8
 
+
 ## What challenges or difficulties did you face? If you solved them, how? If not, what have you learned so far? Have you sought help or other resources?
 I went to lab Sunday to get help from Imma. We tried to get the android phone to connect to Android studio (for like an hour), and we did not master it. However, my emulator works perfectly now (knock on wood) and has only crashed once so far (as of Sunday, May 1st)
 
