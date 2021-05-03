@@ -29,8 +29,12 @@ public class Login extends AppCompatActivity {
         Regbn = findViewById(R.id.toregpg);
         Loginbn = findViewById(R.id.loginb);
         lauth = FirebaseAuth.getInstance();
-
+        
+        
         Loginbn.setOnClickListener(new View.OnClickListener() {
+            //When the log in button is clicked, it checks to see if user has put in both email and password of correct length:
+                //If they haven't done so it displays the correct error message
+                    //If everything is correct, the user is logged in with firebase and it checks to see if email and password match account info on firebase console. 
             @Override
             public void onClick(View v) {
                 String email = lEmail.getText().toString().trim();

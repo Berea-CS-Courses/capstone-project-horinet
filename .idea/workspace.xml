@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Reflections/Week 5 (May 2) reflection.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reflections/Week 5 (May 2) reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/Week 5 (May 2) reflection.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_register.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/addtaskscreen.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/addtaskscreen.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,27 +83,43 @@
       <option name="project" value="LOCAL" />
       <updated>1619198087247</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="I have added my reflection!! Updating it as I go this week &lt;3">
+      <created>1619923732084</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1619923732084</updated>
+    </task>
+    <task id="LOCAL-00006" summary="I have added my reflection!! Updating it as I go this week!">
+      <created>1619923766572</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1619923766572</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed my calendarview.xml and also added my reflection! I'll go back later and add in some screenshots of my code!" />
     <MESSAGE value="I have added my reflection!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have added my reflection!!" />
+    <MESSAGE value="I have added my reflection!! Updating it as I go this week &lt;3" />
+    <MESSAGE value="I have added my reflection!! Updating it as I go this week!" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have added my reflection!! Updating it as I go this week!" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1619801462748">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1619923765780">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1619801462748" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1619923765780" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1619897927442">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619897927442" />
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1619198089193">
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1619923769891">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619198089193" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619923769891" />
     <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1619799357239">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

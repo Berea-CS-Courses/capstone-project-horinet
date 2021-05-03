@@ -56,7 +56,7 @@
         android:layout_marginRight="60dp"
         android:clickable="false"
         android:text="Task name"
-        app:layout_constraintEnd_toStartOf="@+id/tasknametext"
+        app:layout_constraintEnd_toStartOf="@+id/tasknametxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,10 +72,10 @@
         android:text="Task description"
         app:layout_constraintEnd_toStartOf="@+id/taskdesctest"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tasknametext" />
+        app:layout_constraintTop_toBottomOf="@+id/tasknametxt" />
 
     <EditText
-        android:id="@+id/tasknametext"
+        android:id="@+id/tasknametxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
@@ -206,10 +206,10 @@
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/taskdesc"
-        app:layout_constraintTop_toBottomOf="@+id/tasknametext" />
+        app:layout_constraintTop_toBottomOf="@+id/tasknametxt" />
 
     <Button
-        android:id="@+id/savetaskbttn"
+        android:id="@+id/savetaskb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="159dp"

@@ -26,6 +26,7 @@ public class MainActivity extends Activity {
     private ImageButton calendar;
     private Button addtaskhs;
     private Button logout;
+    private Button savetask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -51,18 +52,22 @@ public class MainActivity extends Activity {
     public void newaddtaskscreen(View v) {
         setContentView(R.layout.addtaskscreen);
         // need to figure out how to store this data
+        //savetask = findViewById(R.id.savetaskb);
+        //savetask.setOnClickListener(this::onAddItem);
+        
     }
 
     public void onTodoScreen(View v){
         //creates an array of the items on the todo list.
-        //I will also update this with the addtaskscreen.xml file.
+        //What I NEED to happen: The text from "tasknametxt" in the addtaskscreen.xml file, to show up on the to-do screen in the list. 
+        //What is CURRENTLY happening, It adds a task based off of "etNewItem" in the todoscreen
         setContentView(R.layout.todo_screen);
         readItems();
         lvItems = findViewById(R.id.lvItems);
         items = new ArrayList<String>();
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
-        items.add("First Item");
+        //items.add("First Item");
         // Setup remove listener method call
         additem = findViewById(R.id.btnAddItem);
         additem.setOnClickListener(this::onAddItem);
@@ -70,6 +75,7 @@ public class MainActivity extends Activity {
     }
 
     private void setupListViewListener() {
+        //sets up the list view listener enabling it to add a task to the list
         lvItems.setOnItemLongClickListener(
                 (adapter, item, pos, id) -> {
                     // Remove the item within array at position
@@ -83,6 +89,7 @@ public class MainActivity extends Activity {
     }
     public void calendarView(View v){
         //just the calendar view that's being put on the back burner right now.
+        //Might not be able to implement this fully at this point, but keeping it on the back burner
         setContentView(R.layout.calendarview);
     }
 
