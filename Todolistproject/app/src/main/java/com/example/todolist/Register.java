@@ -90,7 +90,7 @@ public class Register extends AppCompatActivity {
                             Toast.makeText(Register.this, "User created", Toast.LENGTH_SHORT).show();
                             userID = rauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
                             DocumentReference documentref = fstore.collection("users").document(userID);
-                            Map<String,Object> user = new HashMap<String,Object>();
+                            Map<String,Object> user = new HashMap<>();
                             user.put("Name",name);
                             user.put("Email", email); //adds the email and name to the firebase cloud db
                             documentref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {

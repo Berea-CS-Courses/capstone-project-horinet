@@ -39,7 +39,7 @@ public class addtasks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addtasks);
-        /*userIDt = tauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
+        userIDt = tauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
         taskname = findViewById(R.id.tasknametxt);
         taskdes = findViewById(R.id.taskdesctext);
         stdate = findViewById(R.id.startdatetext);
@@ -66,7 +66,7 @@ public class addtasks extends AppCompatActivity {
             public void onClick(View v) {
                 userIDt = tauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
                 //DocumentReference documentreft = tstore.collection("tasks").document(userIDt);
-                Map<String,Object> tasks = new HashMap<String,Object>();
+                Map<String,Object> tasks = new HashMap<>();
                 tasks.put("Task Name", staskname);
                 tasks.put("Task Description", staskdesc);
                 tasks.put("Start Date", sstdate);
@@ -76,9 +76,9 @@ public class addtasks extends AppCompatActivity {
                 tasks.put("End Time", sendtime);
                 tasks.put("Reminder Date", sremdate);
                 tasks.put("Reminder Time", sremtime);
-                tstore.collection("tasks").add(tasks).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
+                tstore.collection("tasks").document(userIDt).set(tasks).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
-                    public void onSuccess(DocumentReference documentReference) {
+                    public void onSuccess(Void aVoid) {
                         Log.d(TAG, "onSuccess: document added with task");
                     }
                 }).addOnFailureListener(new OnFailureListener() {
