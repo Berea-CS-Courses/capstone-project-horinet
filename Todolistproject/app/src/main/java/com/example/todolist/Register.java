@@ -1,3 +1,7 @@
+/* Resources used for *most* of this code, with a few adjustments based on my application
+https://youtu.be/tbh9YaWPKKs
+https://youtu.be/TwHmrZxiPA8*/
+
 package com.example.todolist;
 
 import androidx.annotation.NonNull;
@@ -26,7 +30,7 @@ import java.util.Map;
 
 public class Register extends AppCompatActivity {
     public static final String TAG = "TAG";
-    EditText rName, rEmail, rPass, confirmpass;
+    EditText rName, rEmail, rPass;
     Button Registerbtn, loginpg;
     FirebaseAuth rauth;
     FirebaseFirestore fstore;
@@ -86,9 +90,9 @@ public class Register extends AppCompatActivity {
                             Toast.makeText(Register.this, "User created", Toast.LENGTH_SHORT).show();
                             userID = rauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
                             DocumentReference documentref = fstore.collection("users").document(userID);
-                            Map<String,Object> user = new HashMap<>();
-                            user.put("Name",rName);
-                            user.put("Email", rEmail); //adds the email and name to the firebase cloud db
+                            Map<String,Object> user = new HashMap<String,Object>();
+                            user.put("Name",name);
+                            user.put("Email", email); //adds the email and name to the firebase cloud db
                             documentref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {

@@ -26,7 +26,7 @@ public class MainActivity extends Activity {
     private ImageButton calendar;
     private Button addtaskhs;
     private Button logout;
-    private Button savetask;
+    //private Button savetask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
@@ -37,10 +37,16 @@ public class MainActivity extends Activity {
         //Configuring all of my buttons with onclick listeners to go to the corresponding page :)
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
-        calendar = findViewById(R.id.calendarb);
-        calendar.setOnClickListener(this::calendarView);
+        //calendar = findViewById(R.id.calendarb); //not currently using the calendar view, on back back burner
+        //calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
-        addtaskhs.setOnClickListener(this::newaddtaskscreen);
+        addtaskhs.setOnClickListener(new View.OnClickListener() {
+            //If add task is clicked, it goes to the add task activity class.
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplication(),addtasks.class));
+            }
+        });
     }
 
     public void logout(View view){
@@ -49,13 +55,12 @@ public class MainActivity extends Activity {
         finish();
     }
     
-    public void newaddtaskscreen(View v) {
+    /*public void newaddtaskscreen(View v) {
         setContentView(R.layout.addtaskscreen);
         // need to figure out how to store this data
-        //savetask = findViewById(R.id.savetaskb);
-        //savetask.setOnClickListener(this::onAddItem);
+
         
-    }
+    }*/
 
     public void onTodoScreen(View v){
         //creates an array of the items on the todo list.

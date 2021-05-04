@@ -1,3 +1,7 @@
+/* Resources used for *most* of this code, with a few adjustments based on my application
+https://youtu.be/tbh9YaWPKKs
+https://youtu.be/TwHmrZxiPA8*/
+
 package com.example.todolist;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
