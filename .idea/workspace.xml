@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Todolistproject/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todolistproject/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +48,7 @@
       <recent name="C:\Users\horinet\source\repos\capstone-project-horinet\Reflections" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -103,6 +113,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="I have added my reflection!! Updating it as I go this week!" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1620186920927">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1620186920927" />
     <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1619923765780">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
