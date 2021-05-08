@@ -88,7 +88,7 @@ public class Register extends AppCompatActivity {
                         if(task.isSuccessful()){
                             //If the account is created successfully, the user will be sent to mainactivity (for my app that will be the home screen)
                             Toast.makeText(Register.this, "User created", Toast.LENGTH_SHORT).show();
-                            /*userID = rauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
+                            userID = rauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
                             DocumentReference documentref = fstore.collection("users").document(userID);
                             Map<String,Object> user = new HashMap<>();
                             user.put("Name",name);
@@ -97,13 +97,14 @@ public class Register extends AppCompatActivity {
                                 @Override
                                 public void onSuccess(Void aVoid) {
                                     Log.d(TAG, "onSuccess: user Profile is created for" + userID);
+
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
                                     Log.d(TAG, "onFailure: "+e.toString());
                                 }
-                            });*/
+                            });
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }
                         else{
