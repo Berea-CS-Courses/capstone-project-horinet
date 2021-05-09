@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reflections/Week 5 (May 2) reflection.md" beforeDir="false" afterPath="$PROJECT_DIR$/Reflections/Week 5 (May 2) reflection.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,33 +94,40 @@
       <option name="project" value="LOCAL" />
       <updated>1619923766572</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I have added my reflection!!">
+      <created>1620498842845</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620498842845</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="changed my calendarview.xml and also added my reflection! I'll go back later and add in some screenshots of my code!" />
-    <MESSAGE value="I have added my reflection!!" />
     <MESSAGE value="I have added my reflection!! Updating it as I go this week &lt;3" />
     <MESSAGE value="I have added my reflection!! Updating it as I go this week!" />
-    <option name="LAST_COMMIT_MESSAGE" value="I have added my reflection!! Updating it as I go this week!" />
+    <MESSAGE value="I have added my reflection!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="I have added my reflection!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1620186920927">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1620186920927" />
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1619923765780">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1620498841323">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1619923765780" />
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1620498841323" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1619897927442">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619897927442" />
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1619923769891">
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1620498850489">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1619923769891" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1620498850489" />
     <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1619799357239">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

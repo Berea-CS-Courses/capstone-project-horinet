@@ -24,7 +24,6 @@ public class addtasks extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText taskname, taskdes, stdate, duedate, duetime, sttime, endtime, remdate, remtime;
     FirebaseFirestore tstore;
-    //String userIDt;
     FirebaseAuth tauth;
     Button savetaskbtn;
 
@@ -32,6 +31,8 @@ public class addtasks extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_addtasks);
+        tauth = FirebaseAuth.getInstance();
+        tstore = FirebaseFirestore.getInstance();
         savetaskbtn = findViewById(R.id.savetaskb);
         taskname = findViewById(R.id.tasknametxt);
         taskdes = findViewById(R.id.taskdesctext);
@@ -52,12 +53,13 @@ public class addtasks extends AppCompatActivity {
         String sendtime = endtime.getText().toString();
         String sremdate = remdate.getText().toString();
         String sremtime = remtime.getText().toString();
-        String userID = tauth.getCurrentUser().getUid();
+        String userID = Objects.requireNonNull(tauth.getCurrentUser()).getUid();
 
         savetaskbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CollectionReference userdoc = tstore.collection("users").document(userID).collection("tasks");
+                DocumentReference taskdoc = tstore.collection("users").document(userID).collection("Tasks").document("Tasksdoc");
+                System.out.println(taskdoc); //this doesn't work either
                 Map<String,Object> stask = new HashMap<>();
                 stask.put("Task Name", staskname);
                 stask.put("Task Description", staskdesc);
@@ -69,10 +71,10 @@ public class addtasks extends AppCompatActivity {
                 stask.put("Reminder Date", sremdate);
                 stask.put("Reminder Time", sremtime);
 
-                userdoc.add(stask).addOnSuccessListener(new OnSuccessListener {
+                taskdoc.set(stask).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "onSuccess: task added for" + userID);
+                    public void onSuccess(Void unused) {
+                        Log.d(TAG, "onSuccess: task created for" + userID);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -85,49 +87,3 @@ public class addtasks extends AppCompatActivity {
         });
     }
 }
-            /*@Override
-            public void onClick(View v) {
-                taskname = findViewById(R.id.tasknametxt);
-                taskdes = findViewById(R.id.taskdesctext);
-                stdate = findViewById(R.id.startdatetext);
-                duedate = findViewById(R.id.duedatetext);
-                duetime = findViewById(R.id.duetimetext2);
-                sttime = findViewById(R.id.starttimetext);
-                endtime = findViewById(R.id.endtimetext);
-                remdate = findViewById(R.id.remdatetext);
-                remtime = findViewById(R.id.remtimetext);
-                savetaskbtn = findViewById(R.id.savetaskb);
-                String staskname = taskname.getText().toString().trim();
-                String staskdesc = taskdes.getText().toString().trim();
-                String sstdate = stdate.getText().toString();
-                String sduedate = duedate.getText().toString();
-                String sduetime = duetime.getText().toString();
-                String ssttime = sttime.getText().toString();
-                String sendtime = endtime.getText().toString();
-                String sremdate = remdate.getText().toString();
-                String sremtime = remtime.getText().toString();
-                DocumentReference documentreft = tstore.collection("users").document("tasks");
-                Map<String,Object> tasks = new HashMap<>();
-                tasks.put("Task Name", staskname);
-                tasks.put("Task Description", staskdesc);
-                tasks.put("Start Date", sstdate);
-                tasks.put("Due Date", sduedate);
-                tasks.put("Due Time", sduetime);
-                tasks.put("Start Time", ssttime);
-                tasks.put("End Time", sendtime);
-                tasks.put("Reminder Date", sremdate);
-                tasks.put("Reminder Time", sremtime);
-                documentreft.set(tasks).addOnSuccessListener(new OnSuccessListener<Void>() {
-                    @Override
-                    public void onSuccess(Void aVoid) {
-                        Log.d(TAG, "onSuccess: task created for" + userIDt);
-                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        Log.d(TAG, "onFailure: "+e.toString());
-                    }
-                });
-
-            }*/
