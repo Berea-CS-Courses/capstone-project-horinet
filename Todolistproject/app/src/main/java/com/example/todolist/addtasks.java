@@ -18,8 +18,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-//this doesn't work.
-
 public class addtasks extends AppCompatActivity {
     public static final String TAG = "TAG";
     EditText taskname, taskdes, stdate, duedate, duetime, sttime, endtime, remdate, remtime;
@@ -44,22 +42,23 @@ public class addtasks extends AppCompatActivity {
         remdate = findViewById(R.id.remdatetext);
         remtime = findViewById(R.id.remtimetext);
         savetaskbtn = findViewById(R.id.savetaskb);
-        String staskname = taskname.getText().toString().trim();
-        String staskdesc = taskdes.getText().toString().trim();
-        String sstdate = stdate.getText().toString();
-        String sduedate = duedate.getText().toString();
-        String sduetime = duetime.getText().toString();
-        String ssttime = sttime.getText().toString();
-        String sendtime = endtime.getText().toString();
-        String sremdate = remdate.getText().toString();
-        String sremtime = remtime.getText().toString();
-        String userID = Objects.requireNonNull(tauth.getCurrentUser()).getUid();
 
         savetaskbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String staskname = taskname.getText().toString().trim();
+                Log.d(TAG, "onCreate: test print task name" + staskname);
+                String staskdesc = taskdes.getText().toString().trim();
+                String sstdate = stdate.getText().toString();
+                String sduedate = duedate.getText().toString();
+                String sduetime = duetime.getText().toString();
+                String ssttime = sttime.getText().toString();
+                String sendtime = endtime.getText().toString();
+                String sremdate = remdate.getText().toString();
+                String sremtime = remtime.getText().toString();
+                //Lines 47-55 grab the edit text info and convert them to strings (Most of these are times or dates and i'm not entirely sure how to import those to firestore atm
+                String userID = Objects.requireNonNull(tauth.getCurrentUser()).getUid();
                 DocumentReference taskdoc = tstore.collection("users").document(userID).collection("Tasks").document("Tasksdoc");
-                System.out.println(taskdoc); //this doesn't work either
                 Map<String,Object> stask = new HashMap<>();
                 stask.put("Task Name", staskname);
                 stask.put("Task Description", staskdesc);
