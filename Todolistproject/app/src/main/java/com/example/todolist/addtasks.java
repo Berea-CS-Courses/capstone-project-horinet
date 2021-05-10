@@ -69,7 +69,6 @@ public class addtasks extends AppCompatActivity {
                 stask.put("End Time", sendtime);
                 stask.put("Reminder Date", sremdate);
                 stask.put("Reminder Time", sremtime);
-
                 taskdoc.set(stask).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
