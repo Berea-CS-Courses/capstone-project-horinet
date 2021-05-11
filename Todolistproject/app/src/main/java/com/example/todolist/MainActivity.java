@@ -58,7 +58,6 @@ public class MainActivity extends Activity {
     /*public void newaddtaskscreen(View v) {
         setContentView(R.layout.addtaskscreen);
         // need to figure out how to store this data
-
         
     }*/
 
