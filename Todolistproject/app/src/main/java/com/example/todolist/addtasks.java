@@ -44,8 +44,20 @@ public class addtasks extends AppCompatActivity {
         savetaskbtn = findViewById(R.id.savetaskb);
 
         savetaskbtn.setOnClickListener(new View.OnClickListener() {
+            String tasksdoc = "Tasksdoc";
+            /*Integer counter = 0;
+            public void impforl() {
+                while (true) {
+                    tasksdoc = tasksdoc + counter;
+                    System.out.printf("td+countis"+tasksdoc);
+                    counter = counter + 1;
+                    System.out.printf(String.valueOf(counter));
+                    System.out.printf(tasksdoc);
+                }
+            }*/
             @Override
             public void onClick(View v) {
+                //impforl();
                 String staskname = taskname.getText().toString().trim();
                 Log.d(TAG, "onCreate: test print task name" + staskname);
                 String staskdesc = taskdes.getText().toString().trim();
@@ -58,7 +70,7 @@ public class addtasks extends AppCompatActivity {
                 String sremtime = remtime.getText().toString();
                 //Lines 47-55 grab the edit text info and convert them to strings (Most of these are times or dates and i'm not entirely sure how to import those to firestore atm
                 String userID = Objects.requireNonNull(tauth.getCurrentUser()).getUid();
-                DocumentReference taskdoc = tstore.collection("users").document(userID).collection("Tasks").document("Tasksdoc");
+                DocumentReference taskdoc = tstore.collection("users").document(userID).collection("Tasks").document(tasksdoc);
                 Map<String,Object> stask = new HashMap<>();
                 stask.put("Task Name", staskname);
                 stask.put("Task Description", staskdesc);
