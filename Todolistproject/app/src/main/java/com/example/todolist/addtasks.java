@@ -24,7 +24,7 @@ public class addtasks extends AppCompatActivity {
     FirebaseFirestore tstore;
     FirebaseAuth tauth;
     Button savetaskbtn,backtohomebtn;
-    Integer counter = 0;
+    int counter;
     String tasksdoc = "Tasksdoc"+counter;
 
     @Override
@@ -50,6 +50,7 @@ public class addtasks extends AppCompatActivity {
             private void counttdname() {
                 //This is buggggy. But it deletes the old counter, adds the new one and increments the docs.
                 //Doesn't work once the user clicks out of the screen, and I've had a hard time figuring out how to fix that
+
                 tasksdoc = tasksdoc.substring(0, tasksdoc.length() - 1);
                 tasksdoc = tasksdoc + counter;
                 counter++;
@@ -100,7 +101,6 @@ public class addtasks extends AppCompatActivity {
         backtohomebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });
