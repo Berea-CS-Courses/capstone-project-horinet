@@ -26,6 +26,9 @@ public class MainActivity extends Activity {
     private ImageButton calendar;
     private Button addtaskhs;
     private Button logout;
+    private Button upcoming;
+    private Button exittdscreen;
+    int counter = 0;
     //private Button savetask;
 
     @Override
@@ -34,9 +37,18 @@ public class MainActivity extends Activity {
         setContentView(R.layout.homescreen);
         logout = findViewById(R.id.logout);
         logout.setOnClickListener(this::logout);
+        //TESTING counter to see if it works this way.
+        upcoming = findViewById(R.id.upcomingbtn);
+        upcoming.setOnClickListener(this::countertest);
+
         //Configuring all of my buttons with onclick listeners to go to the corresponding page :)
         todo = findViewById(R.id.todobutton);
-        todo.setOnClickListener(this::onTodoScreen);
+        todo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplication(),newtodoscreen.class));
+            }
+        });
         //calendar = findViewById(R.id.calendarb); //not currently using the calendar view, on back back burner
         //calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
@@ -44,9 +56,16 @@ public class MainActivity extends Activity {
             //If add task is clicked, it goes to the add task activity class.
             @Override
             public void onClick(View v) {
+                counter ++;
                 startActivity(new Intent(getApplication(),addtasks.class));
             }
         });
+    }
+
+    private void countertest(View view) {
+        //Only added to test the counter function to see if it was something else in my addtask.class, it was.
+        System.out.println(counter);
+        counter ++;
     }
 
     public void logout(View view){

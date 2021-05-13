@@ -23,7 +23,9 @@ public class addtasks extends AppCompatActivity {
     EditText taskname, taskdes, stdate, duedate, duetime, sttime, endtime, remdate, remtime;
     FirebaseFirestore tstore;
     FirebaseAuth tauth;
-    Button savetaskbtn;
+    Button savetaskbtn,backtohomebtn;
+    Integer counter = 0;
+    String tasksdoc = "Tasksdoc"+counter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,22 +44,21 @@ public class addtasks extends AppCompatActivity {
         remdate = findViewById(R.id.remdatetext);
         remtime = findViewById(R.id.remtimetext);
         savetaskbtn = findViewById(R.id.savetaskb);
+        backtohomebtn = findViewById(R.id.Backtohome);
 
         savetaskbtn.setOnClickListener(new View.OnClickListener() {
-            String tasksdoc = "Tasksdoc";
-            /*Integer counter = 0;
-            public void impforl() {
-                while (true) {
-                    tasksdoc = tasksdoc + counter;
-                    System.out.printf("td+countis"+tasksdoc);
-                    counter = counter + 1;
-                    System.out.printf(String.valueOf(counter));
-                    System.out.printf(tasksdoc);
-                }
-            }*/
+            private void counttdname() {
+                //This is buggggy. But it deletes the old counter, adds the new one and increments the docs.
+                //Doesn't work once the user clicks out of the screen, and I've had a hard time figuring out how to fix that
+                tasksdoc = tasksdoc.substring(0, tasksdoc.length() - 1);
+                tasksdoc = tasksdoc + counter;
+                counter++;
+                System.out.println(tasksdoc);
+                System.out.println(counter);
+            }
             @Override
             public void onClick(View v) {
-                //impforl();
+                counttdname();
                 String staskname = taskname.getText().toString().trim();
                 Log.d(TAG, "onCreate: test print task name" + staskname);
                 String staskdesc = taskdes.getText().toString().trim();
@@ -68,7 +69,7 @@ public class addtasks extends AppCompatActivity {
                 String sendtime = endtime.getText().toString();
                 String sremdate = remdate.getText().toString();
                 String sremtime = remtime.getText().toString();
-                //Lines 47-55 grab the edit text info and convert them to strings (Most of these are times or dates and i'm not entirely sure how to import those to firestore atm
+                // grab the edit text info and convert them to strings (Most of these are times or dates and i'm not entirely sure how to import those to firestore atm
                 String userID = Objects.requireNonNull(tauth.getCurrentUser()).getUid();
                 DocumentReference taskdoc = tstore.collection("users").document(userID).collection("Tasks").document(tasksdoc);
                 Map<String,Object> stask = new HashMap<>();
@@ -85,6 +86,8 @@ public class addtasks extends AppCompatActivity {
                     @Override
                     public void onSuccess(Void unused) {
                         Log.d(TAG, "onSuccess: task created for" + userID);
+                        Log.d(TAG, "onSuccess: task name is" + tasksdoc);
+                        Log.d(TAG, "onSuccess: counter is" + counter);
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -92,6 +95,12 @@ public class addtasks extends AppCompatActivity {
                         Log.d(TAG, "onFailure: "+e.toString());
                     }
                 });
+            }
+        });
+        backtohomebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
             }
         });

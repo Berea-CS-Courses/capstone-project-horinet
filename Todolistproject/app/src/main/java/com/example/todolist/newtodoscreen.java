@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class newtodoscreen extends AppCompatActivity {
+    //This needs to display the task name of each task, then when clicked show the whole task details
     Button exittd;
 
     @Override

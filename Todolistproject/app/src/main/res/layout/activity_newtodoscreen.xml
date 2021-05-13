@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginStart="183dp"
@@ -26,7 +27,8 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="192dp"
         android:layout_marginRight="192dp"
-        android:text="TODO" />
+        android:text="TODO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <Button
         android:id="@+id/exittodo"
