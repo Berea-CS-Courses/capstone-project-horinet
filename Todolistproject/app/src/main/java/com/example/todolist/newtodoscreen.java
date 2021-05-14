@@ -23,7 +23,7 @@ public class newtodoscreen extends addtasks {
 
 
             }
-        });
+        });*/
 
         exittd = findViewById(R.id.exittodo);
         exittd.setOnClickListener(new View.OnClickListener() {
