@@ -11,6 +11,7 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.protobuf.StringValue;
 
 import org.apache.commons.io.FileUtils;
 import java.io.File;
@@ -28,14 +29,15 @@ public class MainActivity extends Activity {
     private Button logout;
     private Button upcoming;
     private Button exittdscreen;
-    int counter = 0;
-    String updatedcounter;
+    public static int updatedcounter;
+    public static int counter = updatedcounter;
+
     //private Button savetask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
         Intent intent = getIntent();
-        updatedcounter = intent.getStringExtra("counter");
+        updatedcounter = intent.getIntExtra(String.valueOf(updatedcounter), counter);
         System.out.println("This should be the updated counter" + updatedcounter);
         System.out.println("counter variable from addtask" + counter);
         super.onCreate(savedInstanceState);

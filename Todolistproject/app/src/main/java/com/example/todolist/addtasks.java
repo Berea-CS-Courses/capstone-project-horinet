@@ -61,15 +61,6 @@ public class addtasks extends MainActivity {
             @Override
             public void onClick(View v) {
                 counttdname();
-                /*taskname.setText("");
-                taskdes.setText("");
-                stdate.setText("");
-                duedate.setText("");
-                duetime.setText("");
-                sttime.setText("");
-                endtime.setText("");
-                remdate.setText("");
-                remtime.setText("");*/
                 String staskname = taskname.getText().toString().trim();
                 //Log.d(TAG, "onCreate: test print task name" + staskname);
                 String staskdesc = taskdes.getText().toString().trim();
@@ -99,6 +90,15 @@ public class addtasks extends MainActivity {
                         Log.d(TAG, "onSuccess: task created for" + userID);
                         Log.d(TAG, "onSuccess: task name is" + tasksdoc);
                         Log.d(TAG, "onSuccess: counter is" + counter);
+                        taskname.setText("");
+                        taskdes.setText("");
+                        stdate.setText("");
+                        duedate.setText("");
+                        duetime.setText("");
+                        sttime.setText("");
+                        endtime.setText("");
+                        remdate.setText("");
+                        remtime.setText("");
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -117,12 +117,19 @@ public class addtasks extends MainActivity {
                 System.out.println("send updated count from addtasks" +counter1);
             }
         });*/
-        backtohomebtn.setOnClickListener(this::sendcountback);
+        backtohomebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendcountback();
+            }
+        });
     }
-    public void sendcountback(View v){
-        Intent i = new Intent(getApplicationContext(),addtasks.class);
-        i.putExtra("counter",counter1);
-        System.out.println("send updated count from addtasks from method" +counter1);
+    public void sendcountback(){
+        //Emely helped me with this part of the code as well as https://www.youtube.com/watch?v=tNmxq4OVq7E this video.
+        //This sends the counter back to the mainactivity so that counter does not go back to 0 after the button click
+        Intent i = new Intent(addtasks.this,MainActivity.class);
+        i.putExtra(String.valueOf(MainActivity.updatedcounter),counter);
+        System.out.println("send updated count from addtasks from method" +counter);
         startActivity(i);
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
