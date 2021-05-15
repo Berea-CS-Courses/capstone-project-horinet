@@ -18,14 +18,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
-public class addtasks extends AppCompatActivity {
+public class addtasks extends MainActivity {
     public static final String TAG = "TAG";
     EditText taskname, taskdes, stdate, duedate, duetime, sttime, endtime, remdate, remtime;
     FirebaseFirestore tstore;
     FirebaseAuth tauth;
     Button savetaskbtn,backtohomebtn;
-    int counter = 0;
     String tasksdoc = "Tasksdoc"+counter;
+    String counter1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +46,7 @@ public class addtasks extends AppCompatActivity {
         savetaskbtn = findViewById(R.id.savetaskb);
         backtohomebtn = findViewById(R.id.Backtohome);
 
+
         savetaskbtn.setOnClickListener(new View.OnClickListener() {
             private void counttdname() {
                 //This is buggggy. But it deletes the old counter, adds the new one and increments the docs.
@@ -53,6 +54,7 @@ public class addtasks extends AppCompatActivity {
                 tasksdoc = tasksdoc.substring(0, tasksdoc.length() - 1);
                 tasksdoc = tasksdoc + counter;
                 counter++;
+                counter1 = String.valueOf(counter);
                 System.out.println(tasksdoc);
                 System.out.println(counter);
             }
@@ -69,7 +71,7 @@ public class addtasks extends AppCompatActivity {
                 remdate.setText("");
                 remtime.setText("");*/
                 String staskname = taskname.getText().toString().trim();
-                Log.d(TAG, "onCreate: test print task name" + staskname);
+                //Log.d(TAG, "onCreate: test print task name" + staskname);
                 String staskdesc = taskdes.getText().toString().trim();
                 String sstdate = stdate.getText().toString();
                 String sduedate = duedate.getText().toString();
@@ -106,11 +108,22 @@ public class addtasks extends AppCompatActivity {
                 });
             }
         });
-        backtohomebtn.setOnClickListener(new View.OnClickListener() {
+
+        /*backtohomebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Sends counter to maintasks
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                System.out.println("send updated count from addtasks" +counter1);
             }
-        });
+        });*/
+        backtohomebtn.setOnClickListener(this::sendcountback);
+    }
+    public void sendcountback(View v){
+        Intent i = new Intent(getApplicationContext(),addtasks.class);
+        i.putExtra("counter",counter1);
+        System.out.println("send updated count from addtasks from method" +counter1);
+        startActivity(i);
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 }

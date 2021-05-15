@@ -28,13 +28,19 @@ public class MainActivity extends Activity {
     private Button logout;
     private Button upcoming;
     private Button exittdscreen;
-    //int counter = 0;
+    int counter = 0;
+    String updatedcounter;
     //private Button savetask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
+        Intent intent = getIntent();
+        updatedcounter = intent.getStringExtra("counter");
+        System.out.println("This should be the updated counter" + updatedcounter);
+        System.out.println("counter variable from addtask" + counter);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
+        
         logout = findViewById(R.id.logout);
         logout.setOnClickListener(this::logout);
         //TESTING counter to see if it works this way.
@@ -74,6 +80,7 @@ public class MainActivity extends Activity {
         startActivity(new Intent(getApplication(),Login.class));
         finish();
     }
+
     
     /*public void newaddtaskscreen(View v) {
         setContentView(R.layout.addtaskscreen);

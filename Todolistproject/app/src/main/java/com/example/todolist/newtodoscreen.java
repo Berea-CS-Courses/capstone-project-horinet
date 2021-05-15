@@ -17,13 +17,13 @@ public class newtodoscreen extends addtasks {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newtodoscreen);
-        /*savetaskbtn.setOnClickListener(new View.OnClickListener() {
+        savetaskbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
 
             }
-        });*/
+        });
 
         exittd = findViewById(R.id.exittodo);
         exittd.setOnClickListener(new View.OnClickListener() {
