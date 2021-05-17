@@ -58,8 +58,8 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(getApplication(),newtodoscreen.class));
             }
         });
-        //calendar = findViewById(R.id.calendarb); //not currently using the calendar view, on back back burner
-        //calendar.setOnClickListener(this::calendarView);
+        calendar = findViewById(R.id.calendarb); //not currently using the calendar view, on back back burner
+        calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
         addtaskhs.setOnClickListener(new View.OnClickListener() {
             //If add task is clicked, it goes to the add task activity class.

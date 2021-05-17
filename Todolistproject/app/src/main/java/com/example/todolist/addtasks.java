@@ -25,7 +25,8 @@ public class addtasks extends MainActivity {
     FirebaseAuth tauth;
     Button savetaskbtn,backtohomebtn;
     String tasksdoc = "Tasksdoc"+counter;
-    String counter1;
+    String tasknamesend;
+    //String counter1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class addtasks extends MainActivity {
         tstore = FirebaseFirestore.getInstance();
         savetaskbtn = findViewById(R.id.savetaskb);
         taskname = findViewById(R.id.tasknametxt);
+        tasknamesend = taskname.getText().toString().trim();
         taskdes = findViewById(R.id.taskdesctext);
         stdate = findViewById(R.id.startdatetext);
         duedate = findViewById(R.id.duedatetext);
@@ -46,7 +48,6 @@ public class addtasks extends MainActivity {
         savetaskbtn = findViewById(R.id.savetaskb);
         backtohomebtn = findViewById(R.id.Backtohome);
 
-
         savetaskbtn.setOnClickListener(new View.OnClickListener() {
             private void counttdname() {
                 //This is buggggy. But it deletes the old counter, adds the new one and increments the docs.
@@ -54,7 +55,7 @@ public class addtasks extends MainActivity {
                 tasksdoc = tasksdoc.substring(0, tasksdoc.length() - 1);
                 tasksdoc = tasksdoc + counter;
                 counter++;
-                counter1 = String.valueOf(counter);
+                //counter1 = String.valueOf(counter);
                 System.out.println(tasksdoc);
                 System.out.println(counter);
             }
@@ -84,12 +85,14 @@ public class addtasks extends MainActivity {
                 stask.put("End Time", sendtime);
                 stask.put("Reminder Date", sremdate);
                 stask.put("Reminder Time", sremtime);
+                sendtaskname();
                 taskdoc.set(stask).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
                         Log.d(TAG, "onSuccess: task created for" + userID);
                         Log.d(TAG, "onSuccess: task name is" + tasksdoc);
                         Log.d(TAG, "onSuccess: counter is" + counter);
+                        //Sets the edit texts fields to be empty :)
                         taskname.setText("");
                         taskdes.setText("");
                         stdate.setText("");
@@ -132,5 +135,10 @@ public class addtasks extends MainActivity {
         System.out.println("send updated count from addtasks from method" +counter);
         startActivity(i);
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+    }
+    public void sendtaskname(){
+        Intent i1 = new Intent(addtasks.this,newtodoscreen.class);
+        i1.putExtra(String.valueOf(newtodoscreen.taskname1),tasknamesend);
+        startActivity(i1);
     }
 }
