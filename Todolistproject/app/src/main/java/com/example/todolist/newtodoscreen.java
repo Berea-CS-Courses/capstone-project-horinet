@@ -21,7 +21,6 @@ public class newtodoscreen extends addtasks {
             @Override
             public void onClick(View v) {
 
-
             }
         });
 
