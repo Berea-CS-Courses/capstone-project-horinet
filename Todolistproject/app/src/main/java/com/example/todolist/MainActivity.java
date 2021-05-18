@@ -1,6 +1,7 @@
 package com.example.todolist;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -8,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.apache.commons.io.FileUtils;
 import java.io.File;
@@ -22,37 +25,54 @@ public class MainActivity extends Activity {
     private Button additem;
     private ImageButton calendar;
     private Button addtaskhs;
-    private Button logscreen;
-
+    private Button logout;
+    //private Button savetask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)  {
-        //This is the function that controls what happens on create. The buttons have onclick listeners that take the user to the corresponding page.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
+        logout = findViewById(R.id.logout);
+        logout.setOnClickListener(this::logout);
+        //Configuring all of my buttons with onclick listeners to go to the corresponding page :)
         todo = findViewById(R.id.todobutton);
         todo.setOnClickListener(this::onTodoScreen);
-        calendar = findViewById(R.id.calendarb);
-        calendar.setOnClickListener(this::calendarView);
+        //calendar = findViewById(R.id.calendarb); //not currently using the calendar view, on back back burner
+        //calendar.setOnClickListener(this::calendarView);
         addtaskhs = findViewById(R.id.addtaskbtn);
-        addtaskhs.setOnClickListener(this::newaddtaskscreen);
+        addtaskhs.setOnClickListener(new View.OnClickListener() {
+            //If add task is clicked, it goes to the add task activity class.
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplication(),addtasks.class));
+            }
+        });
     }
 
-    public void newaddtaskscreen(View v) {
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplication(),Login.class));
+        finish();
+    }
+    
+    /*public void newaddtaskscreen(View v) {
         setContentView(R.layout.addtaskscreen);
         // need to figure out how to store this data
-    }
+
+        
+    }*/
 
     public void onTodoScreen(View v){
         //creates an array of the items on the todo list.
-        //I will also update this with the addtaskscreen.xml file.
+        //What I NEED to happen: The text from "tasknametxt" in the addtaskscreen.xml file, to show up on the to-do screen in the list. 
+        //What is CURRENTLY happening, It adds a task based off of "etNewItem" in the todoscreen
         setContentView(R.layout.todo_screen);
         readItems();
         lvItems = findViewById(R.id.lvItems);
         items = new ArrayList<String>();
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
-        items.add("First Item");
+        //items.add("First Item");
         // Setup remove listener method call
         additem = findViewById(R.id.btnAddItem);
         additem.setOnClickListener(this::onAddItem);
@@ -60,6 +80,7 @@ public class MainActivity extends Activity {
     }
 
     private void setupListViewListener() {
+        //sets up the list view listener enabling it to add a task to the list
         lvItems.setOnItemLongClickListener(
                 (adapter, item, pos, id) -> {
                     // Remove the item within array at position
@@ -73,6 +94,7 @@ public class MainActivity extends Activity {
     }
     public void calendarView(View v){
         //just the calendar view that's being put on the back burner right now.
+        //Might not be able to implement this fully at this point, but keeping it on the back burner
         setContentView(R.layout.calendarview);
     }
 

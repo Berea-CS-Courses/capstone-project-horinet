@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addtasks">
+
+    <EditText
+        android:id="@+id/duedatetext"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:ems="10"
+        android:hint="mm/dd/yyy"
+        android:inputType="date"
+        app:layout_constraintEnd_toStartOf="@+id/duetimetext2"
+        app:layout_constraintStart_toEndOf="@+id/duedatentime2"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesctext" />
+
+    <TextView
+        android:id="@+id/duedatentime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Due date and time"
+        app:layout_constraintEnd_toStartOf="@+id/startdatetext"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesc" />
+
+    <EditText
+        android:id="@+id/duetimetext2"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.736"
+        app:layout_constraintStart_toEndOf="@+id/startdatetext"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesctext" />
+
+    <TextView
+        android:id="@+id/taskname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        android:clickable="false"
+        android:text="Task name"
+        app:layout_constraintEnd_toStartOf="@+id/tasknametxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/taskdesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="Task description"
+        app:layout_constraintEnd_toStartOf="@+id/taskdesctext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasknametxt" />
+
+    <EditText
+        android:id="@+id/tasknametxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/taskname"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:hint="enter task name" />
+
+    <EditText
+        android:id="@+id/startdatetext"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginRight="144dp"
+        android:ems="10"
+        android:hint="mm/dd/yyy"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesctext" />
+
+    <TextView
+        android:id="@+id/startdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="79dp"
+        android:layout_marginRight="79dp"
+        android:text="Start date"
+        app:layout_constraintEnd_toStartOf="@+id/startdatetext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/taskdesc" />
+
+    <TextView
+        android:id="@+id/endtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="54dp"
+        android:text="End time "
+        app:layout_constraintStart_toEndOf="@+id/starttimetext"
+        app:layout_constraintTop_toBottomOf="@+id/duedatetext" />
+
+    <EditText
+        android:id="@+id/endtimetext"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/endtime"
+        app:layout_constraintTop_toBottomOf="@+id/duetimetext2" />
+
+    <TextView
+        android:id="@+id/starttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Start time "
+        app:layout_constraintEnd_toStartOf="@+id/starttimetext"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/starttimetext" />
+
+    <EditText
+        android:id="@+id/starttimetext"
+        android:layout_width="77dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/starttime"
+        app:layout_constraintTop_toBottomOf="@+id/duedatetext" />
+
+    <EditText
+        android:id="@+id/taskdesctext"
+        android:layout_width="210dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="enter task description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/taskdesc"
+        app:layout_constraintTop_toBottomOf="@+id/tasknametxt" />
+
+    <Button
+        android:id="@+id/savetaskb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginRight="148dp"
+        android:text="Save task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remdatetext" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="213dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:text="Set a reminder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/starttimetext" />
+
+    <EditText
+        android:id="@+id/remdatetext"
+        android:layout_width="115dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="mm/dd/yyy"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/remdatentime"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/remdatentime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:text="Reminder date and time"
+        app:layout_constraintEnd_toStartOf="@+id/remdatetext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/remtimetext"
+        android:layout_width="71dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="99dp"
+        android:ems="10"
+        android:hint="hh:mm"
+        android:inputType="time"
+        app:layout_constraintStart_toEndOf="@+id/remdatetext"
+        app:layout_constraintTop_toBottomOf="@+id/endtimetext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

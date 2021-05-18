@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     tools:context= ".MainActivity">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@android:drawable/presence_invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@android:drawable/presence_invisible" />
-
     <Button
         android:id="@+id/finishedbutton"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -28,6 +16,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
+        android:background="#909F4B"
         android:text="Finished"
         app:backgroundTint="#909F4B"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +33,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
+        android:background="#D88B3A"
         android:text="upcoming"
         app:backgroundTint="#D88B3A"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,14 +47,15 @@
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="165dp"
+        android:layout_marginTop="231dp"
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
+        android:background="#B65858"
         android:text="Todo"
         app:backgroundTint="#B65858"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toTopOf="parent"
         tools:onClick="onTodoScreen" />
 
     <Button
@@ -78,7 +69,9 @@
         android:layout_marginEnd="152dp"
         android:layout_marginRight="152dp"
         android:layout_marginBottom="16dp"
+        android:background="#9256A8"
         android:text="Add task"
+        app:backgroundTint="#9256A8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -99,5 +92,21 @@
         app:layout_constraintStart_toEndOf="@+id/todobutton"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="301dp"
+        android:layout_marginLeft="301dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#3F51B5"
+        android:text="Logout"
+        app:backgroundTint="#3F51B5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
