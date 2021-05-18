@@ -116,10 +116,13 @@ public class addtasks extends MainActivity {
                 });
             }
         });
-
+        //This was also  part of the unit testing to see if the counter would be sent this way as well, but
+        //we found out that I had to create a method, just use counter, not counter1, and send an int value
+        //in order to do that. And in the main activity I had to update counter to counter=updated counter.
         /*backtohomebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 //Sends counter to maintasks
                 startActivity(new Intent(getApplicationContext(), MainActivity.class));
                 System.out.println("send updated count from addtasks" +counter1);
@@ -135,6 +138,7 @@ public class addtasks extends MainActivity {
     public void sendcountback(){
         //Emely helped me with this part of the code as well as https://www.youtube.com/watch?v=tNmxq4OVq7E this video.
         //This sends the counter back to the mainactivity so that counter does not go back to 0 after the button click
+        //The print statements are here for unit testing to make sure that the correct value is being sent.
         Intent i = new Intent(addtasks.this,MainActivity.class);
         i.putExtra(String.valueOf(MainActivity.updatedcounter),counter);
         System.out.println("send updated count from addtasks from method" +counter);
@@ -142,6 +146,8 @@ public class addtasks extends MainActivity {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
     public void sendtaskname(){
+        //I don't call this anymore, because I just had my newtodoscreen.java class extend this class so that I could use the tasknamesend value directly
+        //Since I am not updating that each time I don't have to send it to the other class and back in this way
         Intent i1 = new Intent(addtasks.this,newtodoscreen.class);
         i1.putExtra(String.valueOf(newtodoscreen.taskname1),tasknamesend);
         startActivity(i1);

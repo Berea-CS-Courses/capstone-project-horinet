@@ -44,8 +44,8 @@ public class MainActivity extends Activity {
         
         logout = findViewById(R.id.logout);
         logout.setOnClickListener(this::logout);
-        //TESTING counter to see if it works this way.
-        //Test complete, counter works, just not correctly with my addtaskscreen
+        //TESTING counter to see if it works this way. Unit testing commented out 
+        //Test complete, counter works
         //upcoming = findViewById(R.id.upcomingbtn);
         //upcoming.setOnClickListener(this::countertest);
 
@@ -90,8 +90,9 @@ public class MainActivity extends Activity {
     }*/
 
     public void onTodoScreen(View v){
-        //creates an array of the items on the todo list.
-        //What I NEED to happen: The text from "tasknametxt" in the addtaskscreen.xml file, to show up on the to-do screen in the list. 
+        //I do not use this anymore, however, this was created to test out the listview and how it works to implement it later
+        ////creates an array of the items on the todo list.
+        // What I NEED to happen: The text from "tasknametxt" in the addtaskscreen.xml file, to show up on the to-do screen in the list. 
         //What is CURRENTLY happening, It adds a task based off of "etNewItem" in the todoscreen
         setContentView(R.layout.todo_screen);
         readItems();
@@ -100,7 +101,7 @@ public class MainActivity extends Activity {
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
         //items.add("First Item");
-        // Setup remove listener method call
+        //Setup remove listener method call
         additem = findViewById(R.id.btnAddItem);
         additem.setOnClickListener(this::onAddItem);
         setupListViewListener();

@@ -28,11 +28,10 @@ public class newtodoscreen extends addtasks {
     ListView tdlist;
     ArrayList<String> addtasknames = new ArrayList<>();
     String docname = "Tasksdoc";
-    //FirebaseFirestore tdstore;
-    //FirebaseAuth tdauth;
+    String taskname2;
     DocumentReference tdref;
     TextView tname, tdes, std, dued, duet, sttime, etime, rdate, rtime;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +39,7 @@ public class newtodoscreen extends addtasks {
         tdlist = findViewById(R.id.todolist);
         System.out.println("Counter in addtasks"+updatedcounter);
         addtasknames.add(taskname1);
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,addtasknames);
+        final ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,addtasknames);
         tdlist.setAdapter(arrayAdapter);
         arrayAdapter.notifyDataSetChanged();
         tdlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -54,6 +53,10 @@ public class newtodoscreen extends addtasks {
                     public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
                         assert documentSnapshot != null;
                         if (documentSnapshot.exists()){
+                            /*taskname2 = documentSnapshot.getString("Task Name");
+                            addtasknames.add(taskname2);
+                            tdlist.setAdapter(arrayAdapter);
+                            arrayAdapter.notifyDataSetChanged();*/
                             setContentView(R.layout.taskinfo);
                             tname = findViewById(R.id.tn);
                             tdes = findViewById(R.id.td);
@@ -83,23 +86,15 @@ public class newtodoscreen extends addtasks {
                                     startActivity(new Intent(getApplicationContext(), newtodoscreen.class));
                                 }
                             });
-
                         }
                         else {
-                            Toast.makeText(newtodoscreen.this,"This doc doesn't exist",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(newtodoscreen.this,"This doc doesn't exist",Toast.LENGTH_SHORT).show(); //Unit test that makes sure the document exists if it doesn't exist it shows the error
                         }
                     }
                 });
-
             }
         });
-
-
-
-
-        //System.out.println("seeing if this adds the correct task name"+ taskname1);
-
-
+        //System.out.println("seeing if this adds the correct task name"+ taskname1); //this was a part of unit testing that I don't need anymore
         exittd = findViewById(R.id.exittodo);
         exittd.setOnClickListener(new View.OnClickListener() {
             @Override
