@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".newtodoscreen">
     <ListView
-        android:id="@+id/lvItems"
+        android:id="@+id/todolist"
         android:layout_width="match_parent"
         android:layout_height="451dp"
         android:layout_alignParentTop="true"

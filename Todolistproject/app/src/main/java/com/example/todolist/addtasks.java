@@ -25,7 +25,7 @@ public class addtasks extends MainActivity {
     FirebaseAuth tauth;
     Button savetaskbtn,backtohomebtn;
     String tasksdoc = "Tasksdoc"+counter;
-    String tasknamesend;
+    public static String tasknamesend;
     //String counter1;
 
     @Override
@@ -36,7 +36,7 @@ public class addtasks extends MainActivity {
         tstore = FirebaseFirestore.getInstance();
         savetaskbtn = findViewById(R.id.savetaskb);
         taskname = findViewById(R.id.tasknametxt);
-        tasknamesend = taskname.getText().toString().trim();
+        //tasknamesend = taskname.getText().toString().trim();
         taskdes = findViewById(R.id.taskdesctext);
         stdate = findViewById(R.id.startdatetext);
         duedate = findViewById(R.id.duedatetext);
@@ -61,7 +61,9 @@ public class addtasks extends MainActivity {
             }
             @Override
             public void onClick(View v) {
+                tasknamesend = taskname.getText().toString().trim(); //adding this to send it to todoscreen
                 counttdname();
+                //sendtaskname();
                 String staskname = taskname.getText().toString().trim();
                 //Log.d(TAG, "onCreate: test print task name" + staskname);
                 String staskdesc = taskdes.getText().toString().trim();
@@ -85,15 +87,18 @@ public class addtasks extends MainActivity {
                 stask.put("End Time", sendtime);
                 stask.put("Reminder Date", sremdate);
                 stask.put("Reminder Time", sremtime);
-                sendtaskname();
+                Intent i1 = new Intent(addtasks.this,newtodoscreen.class);
+                i1.putExtra(String.valueOf(newtodoscreen.taskname1),tasknamesend);
+                startActivity(i1);
+                System.out.println("this should be the task name!!!!!"+staskname);
                 taskdoc.set(stask).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
                         Log.d(TAG, "onSuccess: task created for" + userID);
-                        Log.d(TAG, "onSuccess: task name is" + tasksdoc);
+                        Log.d(TAG, "onSuccess: task document name is" + tasksdoc);
                         Log.d(TAG, "onSuccess: counter is" + counter);
                         //Sets the edit texts fields to be empty :)
-                        taskname.setText("");
+                        /*taskname.setText("");
                         taskdes.setText("");
                         stdate.setText("");
                         duedate.setText("");
@@ -101,7 +106,7 @@ public class addtasks extends MainActivity {
                         sttime.setText("");
                         endtime.setText("");
                         remdate.setText("");
-                        remtime.setText("");
+                        remtime.setText("");*/
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
@@ -140,5 +145,6 @@ public class addtasks extends MainActivity {
         Intent i1 = new Intent(addtasks.this,newtodoscreen.class);
         i1.putExtra(String.valueOf(newtodoscreen.taskname1),tasknamesend);
         startActivity(i1);
+        System.out.println("this should be the task name!!!!!"+tasknamesend);
     }
 }

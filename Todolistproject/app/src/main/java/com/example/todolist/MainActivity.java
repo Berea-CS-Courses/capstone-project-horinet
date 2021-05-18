@@ -11,7 +11,6 @@ import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.protobuf.StringValue;
 
 import org.apache.commons.io.FileUtils;
 import java.io.File;
@@ -96,7 +95,7 @@ public class MainActivity extends Activity {
         //What is CURRENTLY happening, It adds a task based off of "etNewItem" in the todoscreen
         setContentView(R.layout.todo_screen);
         readItems();
-        lvItems = findViewById(R.id.lvItems);
+        lvItems = findViewById(R.id.todolist);
         items = new ArrayList<String>();
         itemsAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
         lvItems.setAdapter(itemsAdapter);
