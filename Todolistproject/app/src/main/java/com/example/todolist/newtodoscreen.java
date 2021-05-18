@@ -1,7 +1,5 @@
 package com.example.todolist;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,56 +8,81 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
+
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestoreException;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
 
 public class newtodoscreen extends addtasks {
     //This needs to display the task name of each task, then when clicked show the whole task details
-    Button exittd;
+    Button exittd,exittinfo;
     public static String taskname1 = tasknamesend;
     ListView tdlist;
     ArrayList<String> addtasknames = new ArrayList<>();
     String docname = "Tasksdoc";
-    FirebaseFirestore tdstore;
-    FirebaseAuth tdauth;
+    //FirebaseFirestore tdstore;
+    //FirebaseAuth tdauth;
     DocumentReference tdref;
-    TextView twtd;
-
-
+    TextView tname, tdes, std, dued, duet, sttime, etime, rdate, rtime;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newtodoscreen);
         tdlist = findViewById(R.id.todolist);
-        twtd = findViewById(R.id.textviewtd);
         System.out.println("Counter in addtasks"+updatedcounter);
         addtasknames.add(taskname1);
-        final ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,addtasknames);
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,addtasknames);
         tdlist.setAdapter(arrayAdapter);
         arrayAdapter.notifyDataSetChanged();
         tdlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                docname = docname+ position;
-                DocumentReference tdref = tstore.collection("users").document(userID).collection("Tasks").document("Tasksdoc0");
-                tdref.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                docname = docname+position;
+                System.out.println("The position clicked is" +position);
+                tdref = tstore.collection("users").document(userID).collection("Tasks").document(docname);
+                tdref.addSnapshotListener(new EventListener<DocumentSnapshot>() {
                     @Override
-                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                    public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
+                        assert documentSnapshot != null;
                         if (documentSnapshot.exists()){
-                            Map<String, Object> docinfo = documentSnapshot.getData();
-                            //twtd.setText(docinfo);
-                            System.out.println(docinfo); // print's it but now IDK how to show it
+                            setContentView(R.layout.taskinfo);
+                            tname = findViewById(R.id.tn);
+                            tdes = findViewById(R.id.td);
+                            std = findViewById(R.id.sd);
+                            dued = findViewById(R.id.dd);
+                            duet = findViewById(R.id.dt);
+                            sttime = findViewById(R.id.st);
+                            etime = findViewById(R.id.et);
+                            rdate = findViewById(R.id.rd);
+                            rtime = findViewById(R.id.rt);
+                            exittinfo = findViewById(R.id.exittaskinfo);
+                            tname.setText(documentSnapshot.getString("Task Name"));
+                            tdes.setText(documentSnapshot.getString("Task Description"));
+                            std.setText(documentSnapshot.getString("Start Date"));
+                            dued.setText(documentSnapshot.getString("Due Date"));
+                            duet.setText(documentSnapshot.getString("Due Time"));
+                            sttime.setText(documentSnapshot.getString("Start Time"));
+                            etime.setText(documentSnapshot.getString("End Time"));
+                            rdate.setText(documentSnapshot.getString("Reminder Date"));
+                            rtime.setText(documentSnapshot.getString("Reminder Time"));
+                            System.out.println("This is the name from fb"+documentSnapshot.getString("Task Name"));
+                            //let's see if this works
+                            // print's it but now IDK how to show it
+                            exittinfo.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    startActivity(new Intent(getApplicationContext(), newtodoscreen.class));
+                                }
+                            });
 
                         }
                         else {
@@ -68,18 +91,13 @@ public class newtodoscreen extends addtasks {
                     }
                 });
 
-
-
             }
         });
 
 
 
-        //I am not going to do it this way anymore. It's not working.
-        //Intent intent = getIntent();
-        //taskname1 = intent.getStringExtra(addtasks.tasknamesend);
-        //taskname1 = intent.getStringExtra(addtasks.tasknamesend);
-        System.out.println("seeing if this adds the correct task name"+ taskname1);
+
+        //System.out.println("seeing if this adds the correct task name"+ taskname1);
 
 
         exittd = findViewById(R.id.exittodo);

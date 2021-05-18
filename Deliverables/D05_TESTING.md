@@ -1,0 +1,11 @@
+[Link to my presentation:](https://docs.google.com/presentation/d/1ushEVq3PJFSJKN7LDQ11eG-fCBffOMFh9J0pnJDeEtM/edit?usp=sharing) 
+
+*Cognitive Walk through* I was only able to test my app with two people and that was before I was able to complete the project. However, here is a [link to my results](https://docs.google.com/document/d/1KPaR96zBcYyhgiLOWIuGxv4pXeizm5fn0eXi5FdsCDk/edit?usp=sharing)
+The users were able to do everything I asked without questions. However, they were also computer science majors from other universities, so they were curious about Firebase, how I stored my information, how I designed my application, and how I retrieved data from the Firestore database. 
+
+*Unit Testing* 
+I did a lot of unit testing. Pretty much after adding each line of code I ran my application to make sure it worked. I implemented print statements in every class, and every method in each class to see if my data was getting stored correctly and if I was able to grab the data from Firestore. Right now at 8:49AM on Tuesday May 18th, I am able to get the data from firestore, but I am not able to show that data on the screen as it does not work.
+Sending variables from one class to another was way more complicated than I wanted it to be. Emely and I spent hours together attempting to do this and eventually after watching a lot of videos and reading documentation, I was able to send my counter variable from MainActivity.java to addtasks.java and back to MainActivity so that I am able to use it without it resetting to 0 everytime I run MainActivity.java.
+addtasks.java has many logd statements and print statements to check that I am sending the correct information and submitting my tasks to the correct documents in Firestore. I have onsuccess and onfailure listeners for adding the map of task information to Firestore to ensure I am doing so correctly: If it is successful, in the "Run" or "Logcat" tab it will print out "Task created for" and then the userID of the user that is logged in: If it fails, it will tell me the error that occurred when attempting to add the task info to Firestore. 
+I also have the same structure for Register and Login classes as well. Onsuccess and onfailure listeners for the login and register for account activities!
+

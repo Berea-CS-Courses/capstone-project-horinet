@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Deliverables/D05_TESTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/res/layout/taskinfo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/newtodoscreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/newtodoscreen.java" afterDir="false" />
