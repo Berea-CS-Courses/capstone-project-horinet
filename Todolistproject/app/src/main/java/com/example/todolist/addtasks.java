@@ -26,6 +26,7 @@ public class addtasks extends MainActivity {
     Button savetaskbtn,backtohomebtn;
     String tasksdoc = "Tasksdoc"+counter;
     public static String tasknamesend;
+    public static String userID;
     //String counter1;
 
     @Override
@@ -75,7 +76,7 @@ public class addtasks extends MainActivity {
                 String sremdate = remdate.getText().toString();
                 String sremtime = remtime.getText().toString();
                 // grab the edit text info and convert them to strings (Most of these are times or dates and i'm not entirely sure how to import those to firestore atm
-                String userID = Objects.requireNonNull(tauth.getCurrentUser()).getUid();
+                userID = Objects.requireNonNull(tauth.getCurrentUser()).getUid();
                 DocumentReference taskdoc = tstore.collection("users").document(userID).collection("Tasks").document(tasksdoc);
                 Map<String,Object> stask = new HashMap<>();
                 stask.put("Task Name", staskname);
