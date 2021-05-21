@@ -2,6 +2,7 @@
 [A link to my video of working components](https://drive.google.com/file/d/1mFjn9gkTrJ75jDCf_ZAw1S9LKM-cDLH8/view?usp=sharing)
 [A link to a video of my firebase to prove I am able to store](https://drive.google.com/file/d/1VNF1KC1LdSv3_0lM4mw63yuPddqYuI5A/view?usp=sharing)
 [A link to a folder containing videos,cognitive walkthrough, and presentation](https://drive.google.com/file/d/1VNF1KC1LdSv3_0lM4mw63yuPddqYuI5A/view?usp=sharing)
+
 I think that I have all of the permissions submitted correctly. Here is a quick recap of all of my apps capabilities: 
 - Register/ login/ logout users
     - When user registers it checks to see if email already exists, checks to see if password is at least 6 characters long
@@ -16,3 +17,4 @@ I think that I have all of the permissions submitted correctly. Here is a quick 
 - A lot of buttons throughout that lead users to different activities in the code, clearly labeled to make life easier. 
 - Has all the capability for further improvements: 
     - Deleting tasks, moving them to finished and upcoming screens, setting reminders, and hourly view. All of the necessary components are there, I just wish I had more time (and less computer issues) to implement that functionality. 
+    
