@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Deliverables/D05_TESTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliverables/D05_TESTING.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/Register.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/addtasks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/newtodoscreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/newtodoscreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Todolistproject" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
@@ -120,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1621042356339</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="D05 testing document completed (I think)">
+      <created>1621369804548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1621369804553</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,7 +133,8 @@
     <MESSAGE value="I have added my reflection!!" />
     <MESSAGE value="I have added my reflection. it's not done." />
     <MESSAGE value="REFLECTION FOR WEEK 6 finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="REFLECTION FOR WEEK 6 finished." />
+    <MESSAGE value="D05 testing document completed (I think)" />
+    <option name="LAST_COMMIT_MESSAGE" value="D05 testing document completed (I think)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="394" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621271159551">
@@ -141,18 +145,18 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1366.738@0.0.1366.738" timestamp="1620186920927" />
-    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1621042354427">
+    <state x="238" y="0" key="CommitChangelistDialog2" timestamp="1621369799665">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1621042354427" />
-    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1619897927442">
+    <state x="238" y="0" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1621369799665" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1621558801457">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1619897927442" />
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1621042363487">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1621558801457" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2" timestamp="1621369865925">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1621042363487" />
+    <state x="275" y="89" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1621369865925" />
     <state x="331" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1619799357239">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

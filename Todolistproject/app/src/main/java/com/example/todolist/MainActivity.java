@@ -26,8 +26,6 @@ public class MainActivity extends Activity {
     private ImageButton calendar;
     private Button addtaskhs;
     private Button logout;
-    private Button upcoming;
-    private Button exittdscreen;
     public static int updatedcounter;
     public static int counter = updatedcounter;
 
@@ -108,6 +106,7 @@ public class MainActivity extends Activity {
     }
 
     private void setupListViewListener() {
+        //I do not use this anymore, but figured I should keep it here since it was part of my prototpye!
         //sets up the list view listener enabling it to add a task to the list
         lvItems.setOnItemLongClickListener(
                 (adapter, item, pos, id) -> {
@@ -127,6 +126,7 @@ public class MainActivity extends Activity {
     }
 
     public void onAddItem(View v) {
+        //I do not use this anymore, but figured I should keep it here since it was part of my prototpye!
         //adds the item to the list from the todoscreen, probably not using this in the end I will be making changes to implement it with the addtaskscreen xml file
         EditText etNewItem = findViewById(R.id.etNewItem);
         String itemText = etNewItem.getText().toString();
@@ -135,7 +135,7 @@ public class MainActivity extends Activity {
         writeItems();
     }
     private void readItems() {
-        //also used this for the prototype but will either need to change it or delete it. Reads the items in the todo list
+        //I do not use this anymore, but figured I should keep it here since it was part of my prototpye!
         File filesDir = getFilesDir();
         File todoFile = new File(filesDir, "todo.txt");
         try {
@@ -146,7 +146,7 @@ public class MainActivity extends Activity {
     }
 
     private void writeItems() {
-        //also used this for the prototype but will either need to change it or delete it. writes the items in the todo list
+        //I do not use this anymore, but figured I should keep it here since it was part of my prototpye!
         File filesDir = getFilesDir();
         File todoFile = new File(filesDir, "todo.txt");
         try { FileUtils.writeLines(todoFile, items); }
