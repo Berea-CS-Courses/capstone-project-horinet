@@ -66,17 +66,17 @@ public class Register extends AppCompatActivity {
                 String name = rName.getText().toString();
 
                 if (TextUtils.isEmpty(email)) {
-                    //displays error message if the user does not input email
+                    //displays error message if the user does not input email UNIT TEST
                     rEmail.setError("Email is required");
                     return;
                 }
                 if (TextUtils.isEmpty(password)) {
-                    //displays error message if the user does not input password
+                    //displays error message if the user does not input password UNIT TEST
                     rPass.setError("Password is required");
                     return;
                 }
                 if(password.length() < 6) {
-                    //displays error message if the user does not input password with 6 + characters
+                    //displays error message if the user does not input password with 6 + characters UNIT TEST
                     rPass.setError("Password must be at least 6 characters");
                 }
 
@@ -87,7 +87,7 @@ public class Register extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             //If the account is created successfully, the user will be sent to mainactivity (for my app that will be the home screen)
-                            Toast.makeText(Register.this, "User created", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Register.this, "User created", Toast.LENGTH_SHORT).show(); //UNIT TEST to prove that useraccount is created in Firebase
                             userID = rauth.getCurrentUser().getUid(); //gets the userid of the current user so I can store info in their account
                             DocumentReference documentref = fstore.collection("users").document(userID);
                             Map<String,Object> user = new HashMap<>();
@@ -96,13 +96,12 @@ public class Register extends AppCompatActivity {
                             documentref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override
                                 public void onSuccess(Void aVoid) {
-                                    Log.d(TAG, "onSuccess: user Profile is created for" + userID);
-
+                                    Log.d(TAG, "onSuccess: user Profile is created for" + userID); //UNIT TEST to prove that the account was made
                                 }
                             }).addOnFailureListener(new OnFailureListener() {
                                 @Override
                                 public void onFailure(@NonNull Exception e) {
-                                    Log.d(TAG, "onFailure: "+e.toString());
+                                    Log.d(TAG, "onFailure: "+e.toString()); //UNIT TEST that shows error if 
                                 }
                             });
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
