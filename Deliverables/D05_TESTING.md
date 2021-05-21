@@ -1,5 +1,6 @@
 [Link to my presentation:](https://docs.google.com/presentation/d/1ushEVq3PJFSJKN7LDQ11eG-fCBffOMFh9J0pnJDeEtM/edit?usp=sharing) 
-
+[A link to my video of working components](https://drive.google.com/file/d/1mFjn9gkTrJ75jDCf_ZAw1S9LKM-cDLH8/view?usp=sharing)
+[A link to a video of my firebase to prove I am able to store]()
 *Cognitive Walk through* I was only able to test my app with two people and that was before I was able to complete the project. However, here is a [link to my results](https://docs.google.com/document/d/1KPaR96zBcYyhgiLOWIuGxv4pXeizm5fn0eXi5FdsCDk/edit?usp=sharing)
 The first two users (Blake and Alan) were able to do everything I asked without questions. However, they were also computer science majors from other universities, so they were curious about Firebase, how I stored my information, how I designed my application, and how I retrieved data from the Firestore database. 
 The last two users (Savannah and Mahala) are not computer science majors and were told a small amount about what the app does: you can create tasks to complete sort of like a planner. 

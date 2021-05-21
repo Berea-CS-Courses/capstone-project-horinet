@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="410bd7f9-b4d0-4c9b-949e-1a2ea8a99ae8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Deliverables/FINAL_DELIVERABLE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Todolistproject/app/src/main/java/com/example/todolist/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deliverables/D05_TESTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/Deliverables/D05_TESTING.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,10 +138,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="D05 testing document completed (I think)" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="394" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621271159551">
+    <state x="394" y="171" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621566656225">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="394" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1621271159551" />
+    <state x="394" y="171" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1621566656225" />
     <state x="363" y="105" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1620186920927">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
